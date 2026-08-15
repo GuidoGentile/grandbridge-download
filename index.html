@@ -8,11 +8,16 @@
     <meta property="og:title" content="GrandBridge · Il bridge, finalmente contemporaneo" />
     <meta property="og:description" content="Un nuovo tavolo digitale, progettato intorno al ritmo e ai gesti del bridge reale." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://guidogentile.github.io/grandbridge-download/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://guidogentile.github.io/grandbridge-download/" />
+    <link rel="icon" href="assets/grandbridge-mark.svg" type="image/svg+xml" />
     <title>GrandBridge · Il bridge, finalmente contemporaneo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
     <header class="site-header">
@@ -25,11 +30,11 @@
         <a href="#esperienza">Esperienza</a>
         <a href="#stato">Stato</a>
       </nav>
-      <a class="header-action" href="#stato">In sviluppo</a>
+      <a class="header-action" href="#stato"><i></i> Private beta</a>
     </header>
 
     <main id="inizio">
-      <section class="hero section-shell">
+      <section class="hero section-shell" data-reveal>
         <div class="hero-copy">
           <p class="eyebrow"><i></i> Bridge · reinvented</p>
           <h1>Il bridge,<br /><em>finalmente contemporaneo.</em></h1>
@@ -80,7 +85,7 @@
         </div>
       </section>
 
-      <section id="visione" class="manifesto section-shell">
+      <section id="visione" class="manifesto section-shell" data-reveal>
         <p class="section-kicker">La nostra idea</p>
         <div class="manifesto-grid">
           <h2>Il tavolo resta<br />il tavolo.</h2>
@@ -91,7 +96,17 @@
         </div>
       </section>
 
-      <section id="esperienza" class="experience section-shell">
+      <section class="principles section-shell" aria-label="Principi di GrandBridge" data-reveal>
+        <p class="section-kicker">Quattro promesse</p>
+        <div class="principles-grid">
+          <article><span>♠</span><h3>Leggibile</h3><p>Ogni informazione ha un posto e una gerarchia.</p></article>
+          <article><span>♥</span><h3>Fluido</h3><p>Il tavolo accompagna il pensiero, senza interromperlo.</p></article>
+          <article><span>♦</span><h3>Autentico</h3><p>Gesti e tempi ricordano il bridge giocato davvero.</p></article>
+          <article><span>♣</span><h3>Trasparente</h3><p>Il robot dichiara secondo regole che puoi comprendere.</p></article>
+        </div>
+      </section>
+
+      <section id="esperienza" class="experience section-shell" data-reveal>
         <div class="section-heading">
           <div><p class="section-kicker">Progettato intorno al gioco</p><h2>Più chiaro. Più umano.<br />Più bridge.</h2></div>
           <p>L’interfaccia non corre davanti al giocatore. Gli dà spazio, mostra la gerarchia delle informazioni e lascia respirare ogni azione.</p>
@@ -118,12 +133,12 @@
         </div>
       </section>
 
-      <section class="quote-band">
+      <section class="quote-band" data-reveal>
         <p>“Non un videogioco che usa le carte.<br /><em>Un vero tavolo da bridge, digitale.</em>”</p>
         <div class="suit-line" aria-hidden="true"><span>♠</span><span>♥</span><span>♦</span><span>♣</span></div>
       </section>
 
-      <section id="stato" class="status section-shell">
+      <section id="stato" class="status section-shell" data-reveal>
         <div class="status-copy">
           <p class="section-kicker">Stato del progetto</p>
           <h2>La prima mano<br />è già sul tavolo.</h2>
@@ -138,12 +153,13 @@
         </div>
       </section>
 
-      <section class="closing section-shell">
+      <section class="closing section-shell" data-reveal>
         <div class="closing-mark">G</div>
         <p class="section-kicker">GrandBridge</p>
         <h2>Il futuro del bridge<br />comincia da un tavolo.</h2>
         <p>La prima demo pubblica sarà disponibile qui quando avrà la solidità che il gioco richiede.</p>
-        <a class="primary-button disabled" aria-disabled="true">Demo mobile · prossimamente</a>
+        <a class="primary-button release-button" href="https://github.com/GuidoGentile/grandbridge-download/releases">Segui i rilasci <span>↗</span></a>
+        <small class="closing-note">Niente pubblicità. Nessuna fretta. Solo bridge.</small>
       </section>
     </main>
 
