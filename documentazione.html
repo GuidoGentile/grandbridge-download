@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071d18" />
+    <meta name="description" content="Dossier completo di GrandBridge: prodotto, funzionalità, ruoli, architettura, sicurezza, stato di sviluppo e roadmap." />
+    <meta property="og:title" content="GrandBridge · Documentazione del prodotto" />
+    <meta property="og:description" content="Il perimetro completo della soluzione GrandBridge, dalle funzioni di gioco all’architettura e ai ruoli operativi." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://guidogentile.github.io/grandbridge-download/documentazione.html" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://guidogentile.github.io/grandbridge-download/documentazione.html" />
+    <link rel="icon" href="assets/grandbridge-mark.svg" type="image/svg+xml" />
+    <title>GrandBridge · Documentazione del prodotto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="documentazione.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body class="docs-page">
+    <header class="site-header docs-site-header">
+      <a class="brand" href="index.html" aria-label="GrandBridge, torna alla landing page">
+        <span class="brand-mark">G</span>
+        <span>GrandBridge</span>
+      </a>
+      <nav aria-label="Navigazione della documentazione">
+        <a href="#funzioni">Funzioni</a>
+        <a href="#ruoli">Ruoli</a>
+        <a href="#architettura">Architettura</a>
+        <a href="#stato">Stato</a>
+      </nav>
+      <button class="header-action docs-print" type="button" data-print><i></i> Stampa / PDF</button>
+    </header>
+
+    <main id="inizio">
+      <section class="docs-hero section-shell" data-reveal>
+        <div>
+          <p class="eyebrow"><i></i> Documento di prodotto e architettura</p>
+          <h1>GrandBridge,<br /><em>la soluzione completa.</em></h1>
+          <p class="docs-lead">Descrizione organica dell’applicativo, del funzionamento, dei ruoli, dell’architettura tecnica e del percorso di evoluzione. Il documento descrive la soluzione in sviluppo, non soltanto l’APK pubblico.</p>
+        </div>
+        <dl class="document-meta" aria-label="Informazioni sul documento">
+          <div><dt>Edizione</dt><dd>1.0</dd></div>
+          <div><dt>Data di riferimento</dt><dd>21 agosto 2026</dd></div>
+          <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.2.2-alpha</dd></div>
+          <div><dt>Stato</dt><dd>Prototipo in sviluppo attivo</dd></div>
+          <div><dt>Destinatari</dt><dd>Utenti, partner, operatori, valutatori e terze parti</dd></div>
+        </dl>
+      </section>
+
+      <section class="docs-notice section-shell" aria-label="Criteri di lettura">
+        <p><strong>Come leggere questo dossier.</strong> Ogni capacità è indicata come <span class="status-tag available">Operativa</span>, <span class="status-tag partial">In completamento</span> o <span class="status-tag planned">Pianificata</span>. “Operativa” può riferirsi al codice e ai servizi di sviluppo anche quando la funzione non è ancora inclusa nell’APK pubblico.</p>
+      </section>
+
+      <div class="docs-layout section-shell">
+        <aside class="docs-toc" aria-label="Indice del documento">
+          <p>Indice</p>
+          <ol>
+            <li><a href="#sintesi">Sintesi</a></li>
+            <li><a href="#prodotto">Identità del prodotto</a></li>
+            <li><a href="#funzioni">Mappa funzionale</a></li>
+            <li><a href="#esperienza">Come funziona</a></li>
+            <li><a href="#ruoli">Ruoli e autorizzazioni</a></li>
+            <li><a href="#architettura">Architettura</a></li>
+            <li><a href="#dati">Dati, sicurezza e audit</a></li>
+            <li><a href="#gestione">Modello gestionale</a></li>
+            <li><a href="#distribuzione">Distribuzione</a></li>
+            <li><a href="#stato">Stato e roadmap</a></li>
+            <li><a href="#contesti">Contesti di adozione</a></li>
+            <li><a href="#perimetro">Perimetro documentale</a></li>
+          </ol>
+        </aside>
+
+        <article class="docs-content">
+          <section id="sintesi" class="doc-section" data-reveal>
+            <p class="doc-number">01</p>
+            <p class="section-kicker">Sintesi esecutiva</p>
+            <h2>Un ambiente digitale per l’intero ciclo del bridge.</h2>
+            <p class="doc-intro">GrandBridge è un applicativo mobile-first che porta in un’unica esperienza il gioco al tavolo, l’identità bridgistica, le relazioni tra giocatori, le carte delle convenzioni, le competizioni e gli strumenti operativi per chi organizza.</p>
+            <div class="summary-grid">
+              <article><b>Giocare</b><p>Contro robot, con altre persone, in modalità sincrona o asincrona, riutilizzando lo stesso motore di bridge.</p></article>
+              <article><b>Comprendere</b><p>Regole del robot spiegabili, cronologia delle azioni, punteggio deterministico e replay verificabile.</p></article>
+              <article><b>Connettere</b><p>Profili selettivi, amici, inviti, coppie, convenzioni concordate e affidabilità calcolata dal sistema.</p></article>
+              <article><b>Organizzare</b><p>Tornei, movimenti, classifiche, ruoli del direttore e, in prospettiva, attività dei circoli.</p></article>
+            </div>
+            <div class="callout"><b>Principio guida</b><p>Il telefono presenta l’esperienza; il motore applica le regole; il server decide lo stato competitivo; Postgres conserva identità, accordi, risultati e storia.</p></div>
+          </section>
+
+          <section id="prodotto" class="doc-section" data-reveal>
+            <p class="doc-number">02</p>
+            <p class="section-kicker">Identità del prodotto</p>
+            <h2>Digitale senza perdere il carattere del tavolo.</h2>
+            <p>GrandBridge non tratta il bridge come un semplice gioco di carte generico. L’interfaccia riproduce la logica visiva e temporale del gioco reale: bidding box, cartellini, sequenza della licita, morto ordinato per semi, presa visibile e transizioni che lasciano il tempo di leggere.</p>
+            <h3>Obiettivi del prodotto</h3>
+            <ul>
+              <li>rendere il bridge online contemporaneo, leggibile e adatto a telefoni e tablet;</li>
+              <li>mantenere legalità, punteggio e risultati indipendenti dall’interfaccia;</li>
+              <li>offrire robot deterministici, configurabili e capaci di spiegare la regola applicata;</li>
+              <li>proteggere carte private e risultati competitivi attraverso un server autorevole;</li>
+              <li>costruire identità e relazioni senza trasformare dati privati in informazioni pubbliche;</li>
+              <li>supportare nel tempo giocatori, coppie, direttori, circoli, organizzatori e partner.</li>
+            </ul>
+            <h3>Principi invarianti</h3>
+            <div class="principle-list">
+              <span>Mobile first</span><span>Nessun account anonimo nelle build distribuite</span><span>Server autorevole</span><span>Regole spiegabili</span><span>Dati personali separati</span><span>Registro verificabile</span>
+            </div>
+          </section>
+
+          <section id="funzioni" class="doc-section" data-reveal>
+            <p class="doc-number">03</p>
+            <p class="section-kicker">Mappa funzionale</p>
+            <h2>Le capacità della soluzione.</h2>
+
+            <div class="capability-list">
+              <details open>
+                <summary><span>Gioco e motore di bridge</span><span class="status-tag available">Operativo</span></summary>
+                <div><p>Distribuzioni deterministiche per numero di board, dealer e vulnerabilità sul ciclo ufficiale di 16 board; licitazione con passo, contro e surcontro; determinazione di contratto, dichiarante, morto e attacco; gioco completo con obbligo di risposta al seme; conteggio prese e punteggio duplicate, compresi contratti contrati e surcontrati.</p><p>La macchina a stati governa le fasi della mano e può ricostruire lo stesso risultato a partire dagli stessi eventi.</p></div>
+              </details>
+              <details open>
+                <summary><span>Robot e convenzioni</span><span class="status-tag available">Operativo</span></summary>
+                <div><p>Robot rule-based di licita e gioco, configurabile sulla base della Quinta Nobile naturale. Il sistema espone l’ultima regola applicata e mantiene le regole indipendenti dai componenti grafici.</p><p>Il catalogo delle convenzioni è nominato e versionato; gestisce dipendenze, incompatibilità, alternative esclusive e grado di supporto del robot. Sono previste carte personali e fotografie immutabili della carta concordata dalla coppia.</p></div>
+              </details>
+              <details open>
+                <summary><span>Account, profilo e vita sociale</span><span class="status-tag available">Operativa</span></summary>
+                <div><p>Accesso con email obbligatoria, profilo pubblico e privato separati, codice amico, livello bridgistico, dati federali dichiarati, avatar privato, lingue, disponibilità e pubblicazione selettiva di Paese, ASD e categoria.</p><p>Richieste di amicizia, persone seguite, blocchi bidirezionali, ricerca controllata, inviti e consultazione del sistema di licita pubblico. L’affidabilità e le partite completate sono dati calcolati dal sistema e non modificabili dal telefono.</p></div>
+              </details>
+              <details open>
+                <summary><span>Tavoli multiplayer realtime</span><span class="status-tag partial">In completamento</span></summary>
+                <div><p>Protocollo WebSocket versionato, quattro posti, spettatori, viste private, controllo di turno, comandi idempotenti, protezione da revisioni obsolete, heartbeat, token di riconnessione e ripristino dello stato dopo il riavvio del server.</p><p>Il nucleo server è implementato localmente. Restano la distribuzione pubblica del servizio, il collegamento completo tra presenza, inviti e tavoli persistenti, claim, annullamento, chat e collaudo prolungato con quattro dispositivi reali.</p></div>
+              </details>
+              <details open>
+                <summary><span>Storico e replay</span><span class="status-tag partial">Nucleo operativo</span></summary>
+                <div><p>Archivio personale dei board conclusi, sequenza ordinata dei comandi, ricostruzione deterministica di licita e gioco delle 52 carte, verifica dello stato finale, delle prese e del punteggio N/S.</p><p>Traveller, confronto multi-tavolo, PBN, note, statistiche avanzate e analisi double-dummy appartengono all’estensione pianificata.</p></div>
+              </details>
+              <details open>
+                <summary><span>Sfide e competizioni asincrone</span><span class="status-tag available">Operative nel prodotto</span></summary>
+                <div><p>Sfide private contro amici o robot, serie da 1 a 32 board, scadenza, ripresa dal checkpoint, distribuzioni identiche custodite dal server e confronto board-per-board in punti e IMP.</p><p>Gruppi, competizioni istantanee e daylong usano serie comuni e classifiche IMP o Matchpoint indipendenti dall’ordine di completamento. Manca ancora il collaudo operativo con account reali.</p></div>
+              </details>
+              <details open>
+                <summary><span>Tornei realtime</span><span class="status-tag partial">Fondazione operativa</span></summary>
+                <div><p>Schema dati per tornei, direttori, iscrizioni, lista d’attesa, coppie o squadre, turni, tavoli, risultati, classifiche, penalità, contestazioni e audit. Sono implementati movimenti Mitchell e Howell, accoppiamenti Swiss, tabelloni knockout, cronometro, verifica dei risultati e classifica esportabile.</p><p>Nell’app è disponibile la creazione del primo torneo privato a coppie Mitchell e l’iscrizione. Restano da collegare i tavoli generati alle stanze realtime e da completare il percorso del direttore turno per turno.</p></div>
+              </details>
+              <details>
+                <summary><span>Circoli e attività ordinaria</span><span class="status-tag planned">Pianificata</span></summary>
+                <div><p>Circoli pubblici o privati, ruoli, membri, calendario, comunicazioni, tornei riservati, classifiche interne, distribuzioni preparate, correzioni, sostituzioni ed esportazioni federali autorizzate.</p></div>
+              </details>
+              <details>
+                <summary><span>Spettatori, trasmissioni e comunicazione</span><span class="status-tag planned">Pianificate</span></summary>
+                <div><p>Kibitzing con ritardo, tavoli in evidenza, commentatori, regia multi-tavolo, replay commentato, chat privata e di evento, messaggi offline, traduzione, moderazione e audio/video opzionali.</p></div>
+              </details>
+              <details>
+                <summary><span>Ecosistema e sostenibilità</span><span class="status-tag planned">Pianificati</span></summary>
+                <div><p>Integrazioni federali tramite accordi ufficiali, badge, classifiche GrandBridge, abbonamenti, quote torneo, rimborsi, rendicontazione, API per partner, localizzazione e accessibilità avanzata.</p></div>
+              </details>
+            </div>
+          </section>
+
+          <section id="esperienza" class="doc-section" data-reveal>
+            <p class="doc-number">04</p>
+            <p class="section-kicker">Come funziona</p>
+            <h2>Dal primo accesso al risultato verificabile.</h2>
+            <ol class="journey">
+              <li><b>Identità</b><p>Il giocatore accede con un’identità non anonima, completa il profilo e decide quali informazioni rendere pubbliche.</p></li>
+              <li><b>Relazioni e sistema</b><p>Aggiunge amici, configura la propria carta delle convenzioni e può concordarne una versione con il partner.</p></li>
+              <li><b>Scelta dell’esperienza</b><p>Entra in un tavolo, accetta una sfida asincrona o si iscrive a una competizione o a un torneo.</p></li>
+              <li><b>Assegnazione del board</b><p>Il server identifica giocatori, posti e condizioni, custodisce la distribuzione e prepara una vista privata per ciascun partecipante.</p></li>
+              <li><b>Licita e gioco</b><p>Ogni comando dichiara board e revisione attesa. Il server verifica identità, turno e legalità prima di modificare lo stato.</p></li>
+              <li><b>Persistenza</b><p>Dopo una transizione valida vengono aggiornati checkpoint ed eventi ordinati, senza affidarsi allo stato del telefono.</p></li>
+              <li><b>Risultato</b><p>Prese, contratto e punteggio sono determinati dallo stesso motore. La modalità decide quando rendere visibili confronti e classifiche.</p></li>
+              <li><b>Storico</b><p>A board concluso, la sequenza può essere riprodotta e verificata; statistiche e traveller potranno aggregare più tavoli.</p></li>
+            </ol>
+          </section>
+
+          <section id="ruoli" class="doc-section" data-reveal>
+            <p class="doc-number">05</p>
+            <p class="section-kicker">Persone e responsabilità</p>
+            <h2>Una sola app, funzioni diverse per ruolo.</h2>
+            <p>Il ruolo non crea un prodotto separato: modifica il perimetro delle operazioni disponibili nella stessa applicazione. Le autorizzazioni sono riferite alla singola risorsa, non soltanto al nome del ruolo.</p>
+            <div class="role-grid">
+              <article><span class="status-tag available">Presente</span><h3>Giocatore</h3><p>Gestisce profilo, relazioni e sistema; gioca, consulta storico, partecipa a sfide e si iscrive agli eventi consentiti.</p></article>
+              <article><span class="status-tag available">Presente</span><h3>Partner / coppia</h3><p>Concorda e pubblica una carta di sistema versionata; partecipa come unità nelle competizioni a coppie.</p></article>
+              <article><span class="status-tag partial">In sviluppo</span><h3>Organizzatore</h3><p>Crea un evento e ne definisce formato, capienza, tempi, movimento, condizioni di accesso e punteggio.</p></article>
+              <article><span class="status-tag partial">In sviluppo</span><h3>Direttore di torneo</h3><p>Gestisce check-in, turni, tavoli, sostituzioni, correzioni, penalità, contestazioni e avanzamento dell’evento assegnato.</p></article>
+              <article><span class="status-tag planned">Pianificato</span><h3>Responsabile di circolo</h3><p>Amministra membri, calendario, comunicazioni, eventi e classifiche del proprio circolo.</p></article>
+              <article><span class="status-tag partial">Base presente</span><h3>Spettatore</h3><p>Segue i tavoli consentiti con visibilità controllata; il ritardo competitivo e la trasmissione evoluta sono pianificati.</p></article>
+              <article><span class="status-tag planned">Pianificato</span><h3>Commentatore / moderatore</h3><p>Opera su trasmissioni e comunicazioni di uno specifico evento, con accessi e registri adeguati.</p></article>
+              <article><span class="status-tag planned">Quando necessario</span><h3>Staff di piattaforma</h3><p>Gestirà assistenza globale, privacy, sospensioni e operazioni economiche in una futura superficie interna separata.</p></article>
+              <article><span class="status-tag planned">Evoluzione</span><h3>Federazione / partner</h3><p>Accede soltanto a integrazioni, esportazioni e API formalmente autorizzate, senza controllo implicito sui dati personali.</p></article>
+            </div>
+            <div class="callout"><b>Regola di separazione</b><p>Chi gestisce una risorsa assegnata opera nella normale app GrandBridge. Chi può intervenire trasversalmente su utenti, denaro o dati dell’intera piattaforma richiederà una superficie interna separata.</p></div>
+          </section>
+
+          <section id="architettura" class="doc-section" data-reveal>
+            <p class="doc-number">06</p>
+            <p class="section-kicker">Architettura applicativa</p>
+            <h2>Un monolite modulare con responsabilità nette.</h2>
+            <p>L’architettura attuale evita microservizi prematuri. La soluzione è suddivisa in componenti indipendenti sul piano logico e testabili separatamente.</p>
+            <div class="architecture-flow" role="img" aria-label="L'app React comunica con il server autorevole e con Supabase; il server persiste su Supabase Postgres">
+              <div class="arch-node client"><small>Esperienza</small><b>React + TypeScript</b><span>Web · Android/iOS tramite Capacitor</span></div>
+              <div class="arch-arrow"><span>comandi</span>→</div>
+              <div class="arch-node server"><small>Autorità di gioco</small><b>Server Node + WebSocket</b><span>Turni · legalità · viste private · timer</span></div>
+              <div class="arch-arrow"><span>eventi</span>→</div>
+              <div class="arch-node data"><small>Servizi persistenti</small><b>Supabase + Postgres</b><span>Auth · dati · Storage · RLS</span></div>
+            </div>
+            <div class="component-grid">
+              <article><h3>App React</h3><p>Tavolo, bidding box, profilo, lobby e aree operative per ruolo. Conserva localmente soltanto preferenze di interfaccia e sessione.</p></article>
+              <article><h3>Motore TypeScript</h3><p>Legalità, transizioni, prese, punteggio, robot, proiezioni private ed eventi deterministici, indipendenti da React e dal database.</p></article>
+              <article><h3>Server autorevole</h3><p>Verifica identità, assegna posti, ordina i comandi, gestisce riconnessione e timer, produce viste personalizzate e persiste gli eventi confermati.</p></article>
+              <article><h3>Supabase Auth</h3><p>Gestisce account, sessioni, magic link e futuri provider social. Le build distribuite richiedono email e rifiutano utenti anonimi.</p></article>
+              <article><h3>Postgres</h3><p>Conserva profili, relazioni, convenzioni, sessioni, board, eventi, sfide, tornei, risultati, ruoli e audit con modelli relazionali.</p></article>
+              <article><h3>Storage</h3><p>Conserva asset utente come gli avatar in spazi privati, accessibili tramite regole specifiche e collegamenti temporanei.</p></article>
+            </div>
+            <h3>Scelte intenzionalmente escluse nella fase attuale</h3>
+            <ul>
+              <li>microservizi indipendenti senza un reale bisogno di scala o isolamento;</li>
+              <li>scambio peer-to-peer delle carte o fiducia nel telefono per risultati competitivi;</li>
+              <li>logica di bridge inserita nelle policy del database;</li>
+              <li>un’unica struttura JSON usata per tutti i domini;</li>
+              <li>una seconda applicazione gestionale prima che esistano operazioni globali reali.</li>
+            </ul>
+          </section>
+
+          <section id="dati" class="doc-section" data-reveal>
+            <p class="doc-number">07</p>
+            <p class="section-kicker">Dati, sicurezza e verificabilità</p>
+            <h2>La fiducia non è affidata all’interfaccia.</h2>
+            <div class="security-grid">
+              <article><h3>Identità</h3><p>Le build distribuite richiedono un account con email. Il server realtime verifica il token prima di accettare un giocatore quando opera in modalità autenticata.</p></article>
+              <article><h3>Privacy selettiva</h3><p>Email, nascita, tessera e codice ASD restano privati. Paese, lingue, disponibilità, ASD e categoria vengono pubblicati soltanto su scelta del giocatore.</p></article>
+              <article><h3>Carte private</h3><p>Ogni partecipante riceve soltanto la propria mano. Il morto e le altre carte diventano visibili esclusivamente quando le regole lo consentono.</p></article>
+              <article><h3>Autorizzazione</h3><p>Le tabelle esposte utilizzano Row Level Security. Nascondere un pulsante non concede né revoca un permesso: il controllo avviene sui dati e sul server.</p></article>
+              <article><h3>Persistenza verificabile</h3><p>Il sistema conserva checkpoint compatti e una sequenza append-only di eventi, utile a riconnessione, replay, audit e analisi.</p></article>
+              <article><h3>Riconnessione</h3><p>I token sono conservati come hash e ruotati dopo il rientro. Un riavvio può ripristinare stato e posti senza ricostruire la partita dal telefono.</p></article>
+              <article><h3>Integrità competitiva</h3><p>Board, revisioni, turni e comandi sono verificati. Una ritrasmissione non duplica un’azione e un client rimasto indietro viene riallineato.</p></article>
+              <article><h3>Audit operativo</h3><p>Correzioni, penalità e interventi del direttore producono un registro attribuibile; le funzioni future dello staff seguiranno lo stesso principio.</p></article>
+            </div>
+            <p class="doc-note">Le chiavi privilegiate e i segreti del servizio appartengono esclusivamente all’ambiente server e non vengono inclusi nell’app o nella documentazione pubblica.</p>
+          </section>
+
+          <section id="gestione" class="doc-section" data-reveal>
+            <p class="doc-number">08</p>
+            <p class="section-kicker">Modello gestionale</p>
+            <h2>Una sola applicazione, fino a quando è la scelta giusta.</h2>
+            <p>GrandBridge mantiene una superficie utente unica. Le viste per direttori e responsabili possono assumere un layout desktop più denso, ma restano nello stesso prodotto, con la stessa identità e gli stessi servizi.</p>
+            <table>
+              <thead><tr><th>Tipo di operazione</th><th>Superficie prevista</th></tr></thead>
+              <tbody>
+                <tr><td>Gestione del proprio profilo, tavolo o iscrizione</td><td>App GrandBridge</td></tr>
+                <tr><td>Gestione di un torneo o circolo assegnato</td><td>App GrandBridge, area attivata per ruolo</td></tr>
+                <tr><td>Check-in, turni, risultati, penalità e contestazioni</td><td>App GrandBridge, vista direttore ottimizzata per desktop</td></tr>
+                <tr><td>Database, autenticazione e infrastruttura</td><td>Console dei fornitori autorizzata agli sviluppatori</td></tr>
+                <tr><td>Assistenza globale, privacy, sospensioni e rimborsi</td><td>Futura superficie interna, soltanto quando necessaria</td></tr>
+              </tbody>
+            </table>
+            <p>La comparsa di un modello economico non implica automaticamente una console proprietaria. Pagamenti e fatture possono inizialmente essere amministrati negli strumenti del fornitore; GrandBridge costruirà soltanto le funzioni operative specifiche che non possono essere delegate.</p>
+          </section>
+
+          <section id="distribuzione" class="doc-section" data-reveal>
+            <p class="doc-number">09</p>
+            <p class="section-kicker">Distribuzione e operatività</p>
+            <h2>Dove vive oggi GrandBridge.</h2>
+            <div class="deployment-list">
+              <div><b>Landing e dossier</b><span>GitHub Pages, accesso pubblico</span></div>
+              <div><b>Applicazione Android</b><span>APK alpha scaricabile manualmente; non ancora negli store</span></div>
+              <div><b>Codice applicativo</b><span>Repository di sviluppo separato dalla pagina pubblica</span></div>
+              <div><b>Database e account</b><span>Supabase Cloud con PostgreSQL, Auth e Storage</span></div>
+              <div><b>Server di gioco realtime</b><span>Implementato e verificato localmente; distribuzione pubblica ancora da definire</span></div>
+              <div><b>Webapp completa</b><span>Architettura compatibile; pubblicazione come applicazione web non ancora attiva</span></div>
+            </div>
+            <div class="callout warning"><b>Limite corrente dell’alpha pubblica</b><p>La disponibilità dell’APK non equivale alla disponibilità pubblica dell’intera infrastruttura multiplayer. Il server autorevole deve essere distribuito e collaudato prima dell’apertura delle partite realtime su Internet.</p></div>
+          </section>
+
+          <section id="stato" class="doc-section" data-reveal>
+            <p class="doc-number">10</p>
+            <p class="section-kicker">Stato e percorso di evoluzione</p>
+            <h2>Dal prototipo giocabile alla piattaforma.</h2>
+            <div class="roadmap">
+              <article class="done"><span>01</span><div><b>Fondazione di gioco</b><p>Motore, tavolo, licita, gioco, punteggio e robot deterministico.</p></div><em>Realizzata</em></article>
+              <article class="done"><span>02</span><div><b>Identità e sistema sociale</b><p>Account, profili separati, amici, blocchi, convenzioni e carte di coppia.</p></div><em>Realizzata nel prodotto</em></article>
+              <article class="partial"><span>03</span><div><b>Multiplayer persistente</b><p>Server autorevole e ripristino implementati; distribuzione e collaudo reale da completare.</p></div><em>In completamento</em></article>
+              <article class="done"><span>04</span><div><b>Storico e asincrono</b><p>Replay verificabile, sfide, gruppi, daylong e classifiche.</p></div><em>Nucleo realizzato</em></article>
+              <article class="partial"><span>05</span><div><b>Tornei realtime</b><p>Schema, motori e prima UI presenti; operatività multi-tavolo end-to-end ancora aperta.</p></div><em>In sviluppo</em></article>
+              <article><span>06</span><div><b>Circoli e direttori</b><p>Attività ordinaria, ruoli, calendario, comunicazioni, correzioni ed esportazioni.</p></div><em>Pianificata</em></article>
+              <article><span>07</span><div><b>Trasmissioni e comunicazione</b><p>Spettatori ritardati, commentatori, moderazione, chat e audio/video opzionali.</p></div><em>Pianificata</em></article>
+              <article><span>08</span><div><b>Integrità ed ecosistema</b><p>Analisi anomalie, federazioni, accessibilità, abbonamenti, quote e API partner.</p></div><em>Evoluzione</em></article>
+            </div>
+            <h3>Verifiche operative ancora necessarie</h3>
+            <ul>
+              <li>percorso completo con almeno due account reali per profilo, amicizia, sistema e sfide;</li>
+              <li>almeno 20 board con quattro dispositivi, compresi perdita di rete e rientro;</li>
+              <li>torneo privato multi-tavolo concluso con movimento, tempi e classifica verificata;</li>
+              <li>monitoraggio, prove di carico e simulazione di reti mobili instabili prima della beta pubblica.</li>
+            </ul>
+          </section>
+
+          <section id="contesti" class="doc-section" data-reveal>
+            <p class="doc-number">11</p>
+            <p class="section-kicker">Contesti di adozione</p>
+            <h2>Una base per più modelli, senza anticiparli.</h2>
+            <div class="use-case-grid">
+              <article><h3>Gioco individuale</h3><p>Esperienza personale contro robot, configurazione del sistema e analisi delle mani.</p></article>
+              <article><h3>Comunità di giocatori</h3><p>Amici, coppie, sfide, gruppi, daylong e reputazione collegata alle partite effettive.</p></article>
+              <article><h3>Circoli e ASD</h3><p>Calendario, tornei riservati, membri, classifiche interne e gestione operativa degli eventi.</p></article>
+              <article><h3>Organizzatori</h3><p>Eventi competitivi, movimenti, cronometro, audit del direttore, esportazioni e contestazioni.</p></article>
+              <article><h3>Federazioni e partner</h3><p>Integrazioni circoscritte ad accordi, API autorizzate e separazione tra dichiarazioni e verifiche ufficiali.</p></article>
+              <article><h3>Modello economico</h3><p>Abbonamenti, quote torneo e servizi premium isolati dal motore di gioco e contabilmente verificabili.</p></article>
+            </div>
+          </section>
+
+          <section id="perimetro" class="doc-section" data-reveal>
+            <p class="doc-number">12</p>
+            <p class="section-kicker">Perimetro documentale</p>
+            <h2>Che cosa identifica la soluzione GrandBridge.</h2>
+            <p>Ai fini di presentazione, valutazione e confronto con terze parti, il prodotto è composto da un insieme coerente di elementi:</p>
+            <ul>
+              <li>codice sorgente dell’applicazione React/TypeScript e del contenitore mobile;</li>
+              <li>motore di bridge, macchina a stati, punteggio, robot e regole supportate;</li>
+              <li>protocollo e server autorevole per il gioco realtime e asincrono;</li>
+              <li>modello dati, migrazioni, policy di accesso, replay e registri di audit;</li>
+              <li>interfaccia, flussi di interazione, design system e rappresentazione digitale del tavolo;</li>
+              <li>catalogo strutturato delle convenzioni e modello delle carte personali e di coppia;</li>
+              <li>documentazione di prodotto, architettura e roadmap versionata.</li>
+            </ul>
+            <p class="doc-note">Questo dossier ha finalità descrittiva e di tracciamento del prodotto. Per un deposito formale, una registrazione o una valutazione legale devono essere conservati separatamente gli artefatti richiesti, le versioni del codice e le evidenze di data e titolarità secondo la procedura applicabile.</p>
+            <div class="revision-box">
+              <div><span>Edizione</span><b>1.0</b></div>
+              <div><span>Data</span><b>21 agosto 2026</b></div>
+              <div><span>Oggetto</span><b>Prima descrizione organica pubblica della soluzione</b></div>
+            </div>
+          </section>
+        </article>
+      </div>
+
+      <section class="docs-closing section-shell" data-reveal>
+        <p class="section-kicker">GrandBridge</p>
+        <h2>Una visione unica,<br />un sistema verificabile.</h2>
+        <p>Per una panoramica sintetica, per provare l’APK o per seguire l’evoluzione pubblica del progetto, torna alla pagina principale.</p>
+        <div>
+          <a class="primary-button" href="index.html">Torna alla landing <span>→</span></a>
+          <button class="secondary-button" type="button" data-print>Stampa o salva in PDF</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="index.html"><span class="brand-mark">G</span><span>GrandBridge</span></a>
+      <p>Documento di prodotto e architettura · edizione 1.0</p>
+      <span>© <span id="year"></span> GrandBridge</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -5,6 +5,10 @@ const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
 
+document.querySelectorAll("[data-print]").forEach((button) => {
+  button.addEventListener("click", () => window.print());
+});
+
 const revealItems = document.querySelectorAll("[data-reveal]");
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver((entries, observer) => {
