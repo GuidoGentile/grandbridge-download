@@ -8,9 +8,9 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 
 - landing page e dossier pubblico;
 - app in sviluppo attivo con robot, account, multiplayer, sfide, tornei, circoli, replay e strumenti di integrità;
-- APK Android pubblico disponibile in downloads/GrandBridge-0.2.5-alpha.apk;
+- APK Android pubblico disponibile in downloads/GrandBridge-0.2.6-alpha.apk;
 - Google configurato come accesso social; email e password restano disponibili;
-- replay dei Simultanei FIGB pubblici disponibile dalla tessera associata al profilo; accesso FIGB con credenziali non ancora attivo;
+- pagina Torneo in corso con classifica FIGB provvisoria, accesso MyFIGB facoltativo e credenziali cifrate sul server;
 - Facebook, Apple e pagamenti restano disabilitati finché mancano credenziali o accordi ufficiali.
 
-L’APK 0.2.5-alpha è una build firmata per il collaudo e richiede l’autorizzazione all’installazione manuale sul dispositivo Android. Conserva l’identificativo com.grandbridge.app per aggiornare l’installazione precedente quando la firma coincide.
+L’APK 0.2.6-alpha è una build firmata per il collaudo e richiede l’autorizzazione all’installazione manuale sul dispositivo Android. Conserva l’identificativo com.grandbridge.app per aggiornare l’installazione precedente quando la firma coincide.
