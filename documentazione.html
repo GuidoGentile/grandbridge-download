@@ -45,7 +45,7 @@
         <dl class="document-meta" aria-label="Informazioni sul documento">
           <div><dt>Edizione</dt><dd>1.0</dd></div>
           <div><dt>Data di riferimento</dt><dd>27 agosto 2026</dd></div>
-          <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.3.43-alpha</dd></div>
+          <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.3.45-alpha</dd></div>
           <div><dt>Stato</dt><dd>Prototipo in sviluppo attivo</dd></div>
           <div><dt>Destinatari</dt><dd>Utenti, partner, operatori, valutatori e terze parti</dd></div>
         </dl>
@@ -81,8 +81,8 @@
             <h2>Un ambiente digitale per l’intero ciclo del bridge.</h2>
             <p class="doc-intro">GrandBridge è un applicativo mobile-first che porta in un’unica esperienza il gioco al tavolo, l’identità bridgistica, le relazioni tra giocatori, le carte delle convenzioni, le competizioni e gli strumenti operativi per chi organizza.</p>
             <div class="summary-grid">
-              <article><b>Giocare</b><p>Contro robot, con altre persone, in modalità sincrona o asincrona, riutilizzando lo stesso motore di bridge.</p></article>
-              <article><b>Comprendere</b><p>Regole del robot spiegabili, cronologia delle azioni, punteggio deterministico e replay verificabile.</p></article>
+              <article><b>Giocare</b><p>Contro il Robot ufficiale, con altre persone, in modalità sincrona o asincrona, riutilizzando lo stesso motore di bridge.</p></article>
+              <article><b>Comprendere</b><p>Decisioni del Robot motivate, cronologia delle azioni, punteggio deterministico e replay verificabile.</p></article>
               <article><b>Connettere</b><p>Profili selettivi, amici, inviti, coppie, convenzioni concordate e affidabilità calcolata dal sistema.</p></article>
               <article><b>Organizzare</b><p>Tornei, movimenti, classifiche, ruoli del direttore e, in prospettiva, attività dei circoli.</p></article>
             </div>
@@ -98,7 +98,7 @@
             <ul>
               <li>rendere il bridge online contemporaneo, leggibile e adatto a telefoni e tablet;</li>
               <li>mantenere legalità, punteggio e risultati indipendenti dall’interfaccia;</li>
-              <li>offrire robot deterministici, configurabili e capaci di spiegare la regola applicata;</li>
+              <li>offrire un unico Robot ufficiale, stabile, veloce e capace di motivare le decisioni;</li>
               <li>proteggere carte private e risultati competitivi attraverso un server autorevole;</li>
               <li>costruire identità e relazioni senza trasformare dati privati in informazioni pubbliche;</li>
               <li>supportare nel tempo giocatori, coppie, direttori, circoli, organizzatori e partner.</li>
@@ -121,7 +121,7 @@
               </details>
               <details open>
                 <summary><span>Robot e convenzioni</span><span class="status-tag available">Operativo</span></summary>
-                <div><p>Robot rule-based di licita e gioco, configurabile sulla base della Quinta Nobile naturale. Il sistema espone l’ultima regola applicata e mantiene le regole indipendenti dai componenti grafici.</p><p>Il catalogo delle convenzioni è nominato e versionato; gestisce dipendenze, incompatibilità, alternative esclusive e grado di supporto del robot. Sono previste carte personali e fotografie immutabili della carta concordata dalla coppia.</p></div>
+                <div><p>Un solo Robot ufficiale per licita e gioco della carta: 16 reti neurali ONNX, stima posteriore, DDS selettivo e fallback interno dichiarato. La scelta è stata validata su 500 board identiche contro ogni motore precedente, sia sulla carta sia sull’intera partita.</p><p>Il catalogo delle convenzioni è nominato e versionato; gestisce dipendenze, incompatibilità, alternative esclusive e grado di supporto del Robot. Sono previste carte personali e fotografie immutabili della carta concordata dalla coppia.</p></div>
               </details>
               <details open>
                 <summary><span>Account, profilo e vita sociale</span><span class="status-tag available">Operativa</span></summary>
@@ -141,7 +141,7 @@
               </details>
               <details open>
                 <summary><span>Torneo FIGB personale</span><span class="status-tag available">Operativo</span></summary>
-                <div><p>Una pagina autonoma, raggiungibile direttamente dal menu principale, individua il torneo FIGB in corso o l’ultimo giocato. La barra inferiore rende sempre accessibili Torneo, Curriculum e Classifica: Torneo presenta i principali dati dell’evento, ogni board del Curriculum apre il proprio dettaglio e la mappa del movimento resta una funzione interna.</p><p>Il dettaglio di ciascun board — distribuzione delle carte, par, analisi double-dummy, frequenze di sala e replay con tre robot — diventa disponibile appena FIGB acquisisce il risultato dell’utente su quella mano, anche prima della conclusione del torneo. I board non ancora acquisiti restano nascosti.</p></div>
+                <div><p>Una pagina autonoma, raggiungibile direttamente dal menu principale, individua il torneo FIGB in corso o l’ultimo giocato. La barra inferiore rende sempre accessibili Torneo, Curriculum e Classifica: Torneo presenta i principali dati dell’evento, ogni board del Curriculum apre il proprio dettaglio e la mappa del movimento resta una funzione interna.</p><p>Il dettaglio di ciascun board — distribuzione delle carte, par, analisi double-dummy, frequenze di sala e replay con il Robot ufficiale — diventa disponibile appena FIGB acquisisce il risultato dell’utente su quella mano, anche prima della conclusione del torneo. I board non ancora acquisiti restano nascosti.</p></div>
               </details>              <details open>
                 <summary><span>Tornei realtime</span><span class="status-tag partial">Fondazione operativa</span></summary>
                 <div><p>Schema dati per tornei, direttori, iscrizioni, lista d’attesa, coppie o squadre, turni, tavoli, risultati, classifiche, penalità, contestazioni e audit. Sono implementati movimenti Mitchell e Howell, accoppiamenti Swiss, tabelloni knockout, cronometro, verifica dei risultati e classifica esportabile.</p><p>Nell’app è disponibile la creazione del primo torneo privato a coppie Mitchell e l’iscrizione. Restano da collegare i tavoli generati alle stanze realtime e da completare il percorso del direttore turno per turno.</p></div>
