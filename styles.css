@@ -59,6 +59,10 @@ h1 em,h2 em { color: var(--gold); font-style: normal; }
 .quick-facts b { color: var(--gold); font: 600 42px var(--serif); }
 .quick-facts span { color: var(--muted); font-size: 15px; line-height: 1.4; }
 
+.positioning-statement { padding-block: 105px; text-align: center; background: #0b3027; }
+.positioning-statement p { margin: 0 0 12px; color: var(--muted); font-size: clamp(20px,2.2vw,28px); }
+.positioning-statement h2 { max-width: 920px; margin-inline: auto; }
+
 .content-section { padding-block: 135px; }
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 62px; }
 .section-heading .kicker { grid-column: 1/-1; }
@@ -149,6 +153,7 @@ footer a { color: var(--muted); }
   .quick-facts article { min-height: 125px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .quick-facts article:last-child { border-bottom: 0; }
   .content-section,.dark-section,.video-guide { padding-block: 88px; }
+  .positioning-statement { padding-block: 72px; text-align: left; }
   .section-heading { grid-template-columns: 1fr; margin-bottom: 44px; }
   .feature-list article { grid-template-columns: 48px minmax(0,1fr); }
   .feature-list h3,.experience-grid h3,.status-grid h3 { font-size: 27px; }
