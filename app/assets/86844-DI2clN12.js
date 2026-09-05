@@ -1,0 +1,34 @@
+const p=`vg|GP of Warsaw - GP of Poland Teams Final,ROUND 1_5,I,1,6,HOME,0,AWAY,0|\r
+rs|,3NW=,,5HEx-2,,3NE+3,,3CN=,,,,|\r
+pn|South,West,North,East,Filipowicz,I.Grzejdzi,Cieslak,S.Grzejdzi|pg||\r
+qx|c1|st||md|3SAT8HKQT65DK42C74,S643HAJ8DJT963CT6,SQ72H9432DQ8CK932,SKJ95H7DA75CAQJ85|sv|o|mb|p|mb|1C!|mb|1H|mb|p|mb|2H|mb|d|mb|r|mb|3N|mb|p|mb|p|mb|p|pc|h3|pc|h7|pc|hQ|pc|hA|pg||\r
+pc|dJ|pc|dQ|pc|dA|pc|d4|pg||\r
+pc|d5|pc|dK|pc|d3|pc|d8|pg||\r
+pc|h5|pc|hJ|pc|h2|pc|s5|pg||\r
+pc|dT|pc|h4|pc|d7|pc|d2|pg||\r
+pc|d9|pc|s2|pc|s9|pc|s8|pg||\r
+pc|d6|pc|s7|pc|c5|pc|c4|pg||\r
+pc|cT|pc|c2|pc|c8|pc|c7|pg||\r
+pc|c6|pc|c3|pc|cJ|pc|h6|pg||\r
+pc|cA|pc|sT|pc|s3|pc|c9|pg||\r
+mc|9|pg||\r
+qx|c2|st||md|4ST7542HK4DT764CK6,S3HA632DKJ832C532,SQJ986HDAQ5CAQJ87,SAKHQJT9875D9CT94|sv|n|mb|1H|mb|p|mb|2S!|mb|3H!|mb|4H|mb|4S|mb|5H|mb|d|mb|p|mb|p|mb|p|pc|s7|pc|s3|pc|sJ|pc|sA|pg||\r
+pc|sK|pc|s2|pc|c2|pc|s8|pg||\r
+pc|d9|pc|d4|pc|dK|pc|dA|pg||\r
+pc|cA|pc|c4|pc|c6|pc|c3|pg||\r
+pc|cQ|pc|c9|pc|cK|pc|c5|pg||\r
+pc|h4|pc|hA|pc|c8|pc|h5|pg||\r
+mc|9|pg||\r
+qx|c3|st||md|1SJ54HQ9743DT764CT,STHJT82DAJ832CA64,SKQ832HAK6D95C753,SA976H5DKQCKQJ982|sv|e|mb|p|mb|p|mb|1S|mb|2C|mb|p|mb|2S!|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|s4|pc|sT|pc|sQ|pc|sA|pg||\r
+pc|dK|pc|d7|pc|d2|pc|d5|pg||\r
+pc|dQ|pc|d6|pc|d3|pc|d9|pg||\r
+mc|12|pg||\r
+qx|c4|st||md|2ST98432HJD8CQT762,S75H965432DKT4CJ5,SJHA87DQJ972CAK98,SAKQ6HKQTDA653C43|sv|b|mb|p|mb|1D|mb|d|mb|1S|mb|p|mb|2C|mb|p|mb|3C|mb|p|mb|p|mb|p|pc|sA|pc|s2|pc|s5|pc|sJ|pg||\r
+pc|c3|pc|c2|pc|cJ|pc|cA|pg||\r
+pc|dQ|pc|dA|pc|d8|pc|d4|pg||\r
+pc|c4|pc|c6|pc|c5|pc|c9|pg||\r
+pc|d7|pc|d3|pc|s3|pc|dT|pg||\r
+pc|h6|pc|hA|pc|hK|pc|hJ|pg||\r
+pc|d9|pc|d5|pc|s4|pc|dK|pg||\r
+mc|9|pg||\r
+`;export{p as default};

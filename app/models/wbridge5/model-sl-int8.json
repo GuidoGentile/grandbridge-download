@@ -1,0 +1,30 @@
+{
+  "format": "GrandBridge WBridge5 int8 v1",
+  "source": "https://github.com/harukaki/brl/blob/main/bridge_models/model-sl.pkl",
+  "sourceSha256": "e4174daffd3711f73925a7031ce18dda9b5b7c61e52eb74f325aa1e7d5302ee8",
+  "outputSha256": "5ab83fa21902772a4098be7dc2517fdcc1b358e3d11d7afc7db2bad2b71c6ac8",
+  "quantization": "symmetric int8 per output channel",
+  "activation": "relu",
+  "layers": [
+    {
+      "inputSize": 480,
+      "outputSize": 1024
+    },
+    {
+      "inputSize": 1024,
+      "outputSize": 1024
+    },
+    {
+      "inputSize": 1024,
+      "outputSize": 1024
+    },
+    {
+      "inputSize": 1024,
+      "outputSize": 1024
+    },
+    {
+      "inputSize": 1024,
+      "outputSize": 38
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBridge — anteprima mobile</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        background: #111815;
+      }
+
+      body.fit-mode {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      body.large-mode { overflow: auto; }
+
+      .stage {
+        position: relative;
+        margin: 34px auto 72px;
+      }
+
+      .fit-mode .stage { margin: 0; }
+
+      .phone {
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 390px;
+        height: 844px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 38px;
+        background: #0b1410;
+        box-shadow:
+          0 22px 65px rgba(0, 0, 0, 0.52),
+          0 0 0 7px #080b0a;
+        transform-origin: top left;
+      }
+
+      iframe {
+        display: block;
+        width: 390px;
+        height: 844px;
+        border: 0;
+        background: #174f3e;
+      }
+
+      .size {
+        position: fixed;
+        right: 12px;
+        bottom: 10px;
+        padding: 5px 8px;
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.72);
+        background: rgba(0, 0, 0, 0.42);
+        font-size: 11px;
+        letter-spacing: 0.04em;
+        pointer-events: none;
+      }
+
+      .preview-toggle {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 10;
+        min-width: 108px;
+        height: 34px;
+        padding: 0 13px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 999px;
+        color: #f7f4ea;
+        background: rgba(7, 26, 23, 0.9);
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.32);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.065em;
+        cursor: pointer;
+      }
+
+      .preview-toggle:hover { background: rgba(21, 68, 58, 0.96); }
+
+      .demo-toggle {
+        position: fixed;
+        top: 12px;
+        left: 132px;
+        z-index: 10;
+        height: 34px;
+        padding: 0 13px;
+        border: 1px solid rgba(216, 182, 107, 0.28);
+        border-radius: 999px;
+        color: #d8b66b;
+        background: rgba(7, 26, 23, 0.9);
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.32);
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+        cursor: pointer;
+      }
+
+      .demo-toggle.active {
+        color: #17352f;
+        background: #d8b66b;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="preview-toggle" type="button">VEDI INTERO</button>
+    <button class="demo-toggle" type="button">ESEMPIO LICITAZIONE</button>
+    <main class="stage" aria-label="Anteprima telefono 390 per 844 pixel">
+      <div class="phone">
+        <iframe src="/" title="GrandBridge su telefono"></iframe>
+      </div>
+    </main>
+    <div class="size">390 × 844 px</div>
+
+    <script>
+      const device = { width: 390, height: 844 };
+      const stage = document.querySelector('.stage');
+      const phone = document.querySelector('.phone');
+      const toggle = document.querySelector('.preview-toggle');
+      const demoToggle = document.querySelector('.demo-toggle');
+      const frame = document.querySelector('iframe');
+      const size = document.querySelector('.size');
+      const storageKey = 'grandbridge.mobile-preview-mode.v1';
+      let mode = localStorage.getItem(storageKey) === 'fit' ? 'fit' : 'large';
+      let auctionDemo = false;
+      const forwardedParameters = new URLSearchParams(window.location.search);
+      frame.src = forwardedParameters.size ? `/?${forwardedParameters}` : '/';
+
+      function fitPhone() {
+        const scale = mode === 'large'
+          ? Math.min((window.innerWidth - 56) / device.width, 1.15)
+          : Math.min(
+              (window.innerWidth - 60) / device.width,
+              (window.innerHeight - 60) / device.height,
+              1,
+            );
+
+        document.body.className = mode === 'large' ? 'large-mode' : 'fit-mode';
+        stage.style.width = `${device.width * scale}px`;
+        stage.style.height = `${device.height * scale}px`;
+        phone.style.transform = `scale(${scale})`;
+        toggle.textContent = mode === 'large' ? 'VEDI INTERO' : 'INGRANDISCI';
+        toggle.setAttribute('aria-label', mode === 'large'
+          ? 'Mostra tutto il telefono nello schermo'
+          : 'Ingrandisci il telefono a dimensione reale');
+        size.textContent = `390 × 844 px · ${Math.round(scale * 100)}%`;
+      }
+
+      toggle.addEventListener('click', () => {
+        mode = mode === 'large' ? 'fit' : 'large';
+        localStorage.setItem(storageKey, mode);
+        fitPhone();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      demoToggle.addEventListener('click', () => {
+        auctionDemo = !auctionDemo;
+        frame.src = auctionDemo ? '/?auctionDemo=1' : '/';
+        demoToggle.textContent = auctionDemo ? 'TORNA AL GIOCO' : 'ESEMPIO LICITAZIONE';
+        demoToggle.classList.toggle('active', auctionDemo);
+      });
+      window.addEventListener('resize', fitPhone);
+      fitPhone();
+    </script>
+  </body>
+</html>

@@ -7,6 +7,7 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 ## Stato
 
 - landing page e dossier pubblico;
+- web app accessibile direttamente dalla landing page in `/app/`;
 - app in sviluppo attivo con robot, account, multiplayer, sfide, tornei, circoli, replay e strumenti di integrità;
 - APK Android pubblico 0.4.1-alpha disponibile dalla release collegata alla landing page;
 - replay unificato per storico, allenamenti e partite dei campioni, con navigazione diretta fra board;

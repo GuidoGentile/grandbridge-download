@@ -1,0 +1,296 @@
+const p=`vg|2026 Chairman's Cup,Quarterfinal 3 of 4,I,1,16,KanelBULLEN,49,Alpert,47|\r
+rs|6SW=,4SW+2,5DWx-2,4HN=,2NW-1,2DN+1,4HW=,4HE=,6CE-1,5CE=,3NE-1,3NW-1,2SE+1,2SE+1,1NN+2,2HWx-3,4SE-2,6DW-2,3NE-1,3NE=,3HE-1,3HE-1,2SS=,3SS-1,3NW=,3NW+1,4HE=,4HE-2,3NS=,3NS=,1NS-3,1NS-1|\r
+pn|Lien Owen,Madala Agu,Kaplan Ada,Sementa An,Bernal,Bertheau K,Michielsen,Bertheau M|pg||\r
+qx|o1|st||md|3S974HK65DJT63C764,SKJ852HAD9752CAT8,S3HJ932DAK84CJ953,SAQT6HQT874DQCKQ2|sv|o|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|2C!|mb|p|mb|2D!|mb|p|mb|2S|mb|p|mb|2N|mb|p|mb|3S|mb|p|mb|4C|mb|p|mb|4D|mb|p|mb|4N|mb|p|mb|5C|mb|p|mb|6S|mb|p|mb|p|mb|p|pc|dA|pc|dQ|pc|d3|pc|d5|pg||\r
+pc|d4|pc|s6|pc|d6|pc|d2|pg||\r
+pc|sA|pc|s4|pc|s2|pc|s3|pg||\r
+pc|h4|pc|h5|pc|hA|pc|h2|pg||\r
+pc|d7|pc|d8|pc|sT|pc|dT|pg||\r
+pc|h7|pc|h6|pc|s5|pc|h3|pg||\r
+pc|d9|pc|dK|pc|sQ|pc|dJ|pg||\r
+pc|c2|pc|c4|pc|cA|pc|c3|pg||\r
+pc|sK|mc|12|pg||\r
+qx|c1|st||md|3S974HK65DJT63C764,SKJ852HAD9752CAT8,S3HJ932DAK84CJ953,SAQT6HQT874DQCKQ2|sv|o|mb|p|mb|1H|mb|p|mb|1S|mb|d|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|pc|dA|pc|dQ|pc|d6|pc|d2|pg||\r
+pc|c3|pc|c2|pc|c6|mc|12|pg||\r
+qx|o2|st||md|4SJ843HQJ874D5CAK6,ST75HA5DAKQ632CJ2,SKQ96HKT92DJ74CQ3,SA2H63DT98CT98754|sv|n|mb|p|mb|1H|mb|2D|mb|2N!|mb|3D|mb|4H|mb|5D|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|pc|d7|pc|d8|pc|d5|pc|d6|pg||\r
+pc|sA|pc|s3|pc|s5|pc|s6|pg||\r
+pc|s2|pc|s4|pc|sT|pc|sQ|pg||\r
+pc|d4|pc|d9|pc|h8|pc|dQ|pg||\r
+pc|s7|pc|s9|pc|dT|pc|s8|pg||\r
+mc|9|pg||\r
+qx|c2|st||md|4SJ843HQJ874D5CAK6,ST75HA5DAKQ632CJ2,SKQ96HKT92DJ74CQ3,SA2H63DT98CT98754|sv|n|mb|p|mb|2D|mb|3D|mb|4H|mb|p|mb|p|mb|p|pc|d8|pc|d5|pc|dQ|pc|d4|pg||\r
+pc|dK|pc|d7|pc|dT|pc|h4|pg||\r
+pc|hQ|pc|hA|pc|h2|pc|h6|pg||\r
+pc|s5|pc|s6|pc|sA|pc|s3|pg||\r
+pc|s2|pc|s4|pc|sT|mc|10|pg||\r
+qx|o3|st||md|1SJ86HQ972DK9CJ765,SAQ94HA84D652CAKQ,SK752HKT6DAQT83CT,ST3HJ53DJ74C98432|sv|e|mb|p|mb|2D!|mb|p|mb|2S!|mb|p|mb|2N|mb|p|mb|p|mb|p|pc|dA|pc|d4|pc|d9|pc|d6|pg||\r
+pc|d8|pc|d7|pc|dK|pc|d5|pg||\r
+pc|s8|pc|s4|pc|sK|pc|s3|pg||\r
+pc|dQ|pc|dJ|pc|c5|pc|d2|pg||\r
+pc|dT|pc|c2|pc|c6|pc|h4|pg||\r
+pc|d3|pc|sT|mc|7|pg||\r
+qx|c3|st||md|1SJ86HQ972DK9CJ765,SAQ94HA84D652CAKQ,SK752HKT6DAQT83CT,ST3HJ53DJ74C98432|sv|e|mb|p|mb|1C|mb|1D|mb|p|mb|p|mb|1N|mb|p|mb|2C|mb|2D|mb|p|mb|p|mb|p|pc|sT|pc|sJ|pc|sQ|pc|sK|pg||\r
+pc|cT|pc|c9|pc|c5|pc|cK|pg||\r
+pc|cA|pc|d3|pc|c4|pc|c6|pg||\r
+pc|s2|pc|s3|pc|s8|pc|s9|pg||\r
+pc|d2|pc|d8|pc|dJ|pc|dK|pg||\r
+pc|h2|pc|h4|pc|hK|pc|h5|pg||\r
+pc|s5|pc|c3|pc|s6|pc|sA|pg||\r
+pc|cQ|pc|dT|pc|c8|pc|c7|pg||\r
+pc|s7|pc|c2|pc|cJ|pc|s4|pg||\r
+pc|h6|pc|h3|pc|h9|pc|hA|pg||\r
+pc|h8|pc|hT|pc|hJ|pc|hQ|pg||\r
+mc|9|pg||\r
+qx|o4|st||md|2SAT964HT3DAT7CQJ5,SJ8HAQ9542D9643C7,S32H86DKQJ85CAT43,SKQ75HKJ7D2CK9862|sv|b|mb|2H|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|dK|pc|d2|pc|d7|pc|d6|pg||\r
+pc|s3|pc|s5|pc|sA|pc|s8|pg||\r
+pc|c5|pc|c7|pc|cA|pc|c2|pg||\r
+pc|c4|pc|c6|pc|cJ|pc|h2|pg||\r
+pc|d3|pc|d5|pc|h7|pc|dT|pg||\r
+mc|10|pg||\r
+qx|c4|st||md|2SAT964HT3DAT7CQJ5,SJ8HAQ9542D9643C7,S32H86DKQJ85CAT43,SKQ75HKJ7D2CK9862|sv|b|mb|2D!|mb|p|mb|4C!|mb|p|mb|4D!|mb|d|mb|4H|mb|p|mb|p|mb|p|pc|dA|pc|d3|pc|d5|pc|d2|pg||\r
+pc|dT|pc|d4|pc|dJ|pc|h7|pg||\r
+pc|s5|pc|s6|pc|sJ|pc|s2|pg||\r
+pc|s8|pc|s3|pc|sQ|pc|sA|pg||\r
+pc|cQ|pc|c7|pc|cA|pc|c9|pg||\r
+pc|dQ|pc|hJ|pc|d7|pc|d6|pg||\r
+pc|hK|pc|h3|pc|h2|pc|h6|pg||\r
+pc|cK|pc|c5|pc|d9|pc|c3|pg||\r
+pc|c2|pc|cJ|pc|h9|pc|c4|pg||\r
+mc|10|pg||\r
+qx|o5|st||md|3SKT864H7632D4C865,SJ52HKDAKT8CAT742,SA73HQJT854D6532C,SQ9HA9DQJ97CKQJ93|sv|n|mb|2H|mb|2N|mb|3H|nt|Cantorm:  Is he maybe choosing between 3N and 4?|pg||\r
+nt|Cantorm:  Or even 5 pick a slam?|pg||\r
+mb|d|mb|p|nt|Cantorm:  That was not on my bingo card|pg||\r
+mb|4C|mb|p|mb|4H|mb|d!|mb|r|nt|Cantorm:  I suspect dbl is dont lead a @h|pg||\r
+mb|p|mb|6C|mb|p|mb|p|mb|p|pc|d4|pc|d8|mc|11|pg||\r
+qx|c5|st||md|3SKT864H7632D4C865,SJ52HKDAKT8CAT742,SA73HQJT854D6532C,SQ9HA9DQJ97CKQJ93|sv|n|mb|2H|mb|3C|mb|4H|mb|4N|mb|p|mb|5C|mb|p|mb|p|mb|p|pc|d4|pc|dA|pc|d6|pc|d7|pg||\r
+mc|11|pg||\r
+qx|o6|st||md|4SQT9876HQ983DJ3C2,SKJH4DAK987CAJ854,S4HAJ62DQ642CKT96,SA532HKT75DT5CQ73|sv|e|mb|p|mb|2S|nt|Cantorm:  3N down other room but it looks makeable at first inspection |pg||\r
+mb|3S!|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|h3|pc|h4|pc|hA|pc|h5|pg||\r
+pc|h2|nt|Cantorm:  My bet is on declarer. But itâs a v small bet|pg||\r
+pc|h7|pc|h8|nt|Cantorm:  Playing for split @d honours|pg||\r
+pc|d7|pg||\r
+nt|Cantorm:  Not now|pg||\r
+pc|dJ|pc|dA|pc|d2|pc|d5|pg||\r
+pc|cA|pc|c6|pc|c3|pc|c2|pg||\r
+pc|c4|pc|c9|pc|cQ|pc|s6|pg||\r
+pc|dT|pc|d3|pc|d8|pc|dQ|pg||\r
+pc|h6|pc|hK|pc|h9|pc|c5|pg||\r
+mc|8|pg||\r
+qx|c6|st||md|4SQT9876HQ983DJ3C2,SKJH4DAK987CAJ854,S4HAJ62DQ642CKT96,SA532HKT75DT5CQ73|sv|e|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|2C|mb|p|mb|2D|mb|2S|mb|3C|mb|p|mb|3S!|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|hA|pc|h5|pc|h3|pc|h4|pg||\r
+pc|h2|pc|h7|pc|h8|pc|d8|pg||\r
+pc|h9|pc|d7|pc|hJ|pc|hK|pg||\r
+pc|c3|pc|c2|pc|cJ|pc|cK|pg||\r
+pc|h6|pc|hT|pc|hQ|pc|d9|pg||\r
+pc|d3|pc|dA|pc|d2|pc|d5|pg||\r
+pc|c4|pc|c6|pc|cQ|pc|s8|pg||\r
+pc|c7|pc|s7|pc|cA|pc|c9|pg||\r
+pc|c5|pc|cT|mc|8|pg||\r
+qx|o7|st||md|1S983HQJT74DKJ9CQT,SQJ2H9865DT4C9764,SK4HK3DQ8732CKJ32,SAT765HA2DA65CA85|sv|b|mb|p|mb|p|mb|1D|mb|1S|mb|d|mb|2S|mb|p|mb|p|mb|p|pc|s3|pc|sQ|pc|sK|pc|sA|pg||\r
+pc|d6|pc|dJ|pc|d4|pc|d8|pg||\r
+pc|s8|pc|sJ|pc|s4|pc|s5|pg||\r
+pc|dT|pc|d2|pc|dA|pc|d9|pg||\r
+pc|d5|pc|dK|pc|s2|pc|d3|pg||\r
+mc|9|pg||\r
+qx|c7|st||md|1S983HQJT74DKJ9CQT,SQJ2H9865DT4C9764,SK4HK3DQ8732CKJ32,SAT765HA2DA65CA85|sv|b|mb|p|mb|p|mb|1D|mb|1N|mb|d|mb|r|mb|p|mb|2S|mb|p|mb|p|mb|p|pc|s3|pc|sQ|pc|sK|pc|sA|pg||\r
+pc|dA|pc|d9|pc|d4|pc|d2|pg||\r
+pc|d5|pc|dJ|pc|dT|pc|dQ|pg||\r
+pc|s4|pc|s5|pc|s8|pc|sJ|pg||\r
+pc|h5|pc|h3|pc|hA|pc|hQ|pg||\r
+pc|d6|pc|dK|pc|s2|pc|d3|pg||\r
+pc|c4|pc|c2|pc|cA|pc|cT|pg||\r
+pc|sT|pc|s9|mc|9|pg||\r
+qx|o8|st||md|2S98652H3DA932CAQ4,SAQ4HJ9854D864C72,ST3HAKT72DK75CT96,SKJ7HQ6DQJTCKJ853|sv|o|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|p|mb|p|pc|c3|nt|Cantorm:  Other room EW got over active|pg||\r
+pc|c4|pc|c7|pc|c9|pg||\r
+pc|s3|pc|sJ|pc|s2|pc|s4|pg||\r
+pc|dQ|pc|d2|pc|d8|pc|d5|pg||\r
+pc|c5|pc|cQ|pc|c2|pc|c6|pg||\r
+pc|s5|pc|sQ|pc|sT|pc|s7|pg||\r
+pc|h4|pc|hA|pc|h6|pc|h3|pg||\r
+pc|d7|pc|dT|nt|Cantorm:  I donât begin to understand W 2@h after 1@c 1@h 1N|pg||\r
+pc|dA|pc|d4|pg||\r
+pc|s6|pc|sA|pc|h2|pc|sK|pg||\r
+mc|9|pg||\r
+qx|c8|st||md|2S98652H3DA932CAQ4,SAQ4HJ9854D864C72,ST3HAKT72DK75CT96,SKJ7HQ6DQJTCKJ853|sv|o|mb|p|mb|p|mb|1C|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|2H|mb|p|mb|p|mb|d|mb|p|mb|p|mb|p|pc|sT|pc|s7|pc|s6|pc|sQ|pg||\r
+pc|c2|pc|cT|pc|cJ|pc|cQ|pg||\r
+pc|s9|pc|sA|pc|s3|pc|sJ|pg||\r
+pc|c7|pc|c6|pc|c3|pc|cA|pg||\r
+pc|s8|pc|s4|pc|h2|pc|sK|pg||\r
+pc|hK|pc|h6|pc|h3|pc|h4|pg||\r
+pc|hA|pc|hQ|pc|c4|pc|h5|pg||\r
+pc|dK|pc|dT|pc|d2|pc|d4|pg||\r
+pc|d5|pc|dQ|pc|dA|pc|d6|pg||\r
+pc|s5|pc|h8|pc|hT|pc|c5|pg||\r
+pc|d7|pc|dJ|pc|d3|pc|d8|pg||\r
+mc|5|pg||\r
+qx|o9|st||md|3ST4H8DT9832CAK754,SJHAKQJ94DKJ76CQ3,SKQ63HT7632DCT962,SA98752H5DAQ54CJ8|sv|e|mb|p|mb|1S|mb|p|mb|2H|mb|p|mb|2S|mb|p|nt|Cantorm:  Not the first slam weâve seen off 2 cashing tricks (other room|pg||\r
+mb|3H|mb|p|mb|3S|mb|p|mb|4C|mb|p|mb|4S|mb|p|nt|Cantorm:  Is that a Zia cuebid? ð³ð¤ª|pg||\r
+mb|p|mb|p|pc|cK|pc|c3|pc|cT|pc|c8|pg||\r
+pc|dT|pc|dK|pc|s3|pc|d4|pg||\r
+pc|c2|pc|cJ|pc|cA|pc|cQ|pg||\r
+pc|d3|nt|Cantorm:  Im asked what is a Zia cue. Basically showing a control you donât have, as a kind of bluff. Heâs famous for it. Read his recent book âBridge : A Love Storyâ|pg||\r
+pc|d6|pc|s6|pc|d5|pg||\r
+mc|8|pg||\r
+qx|c9|st||md|3ST4H8DT9832CAK754,SJHAKQJ94DKJ76CQ3,SKQ63HT7632DCT962,SA98752H5DAQ54CJ8|sv|e|mb|p|mb|1S|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|3D|mb|p|mb|4D|mb|p|mb|4N|mb|p|mb|5S|mb|p|mb|6D|mb|p|mb|p|mb|p|pc|cT|pc|c8|pc|cK|pc|c3|pg||\r
+pc|cA|pc|cQ|pc|c2|pc|cJ|pg||\r
+pc|dT|pc|d6|pc|c6|pc|dA|pg||\r
+pc|h5|pc|h8|pc|hA|pc|h3|pg||\r
+pc|hK|pc|h2|pc|s2|pc|d2|pg||\r
+pc|d9|pc|dK|pc|c9|pc|d4|pg||\r
+pc|h4|pc|h6|pc|dQ|pc|c4|pg||\r
+pc|d5|pc|d3|pc|d7|pc|s3|pg||\r
+pc|dJ|mc|10|pg||\r
+qx|o10|st||md|4SJ983H762DK53C965,SKT5HKT54DA74CQT2,S642HAQJD986CAJ87,SAQ7H983DQJT2CK43|sv|b|mb|1D|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|c9|nt|Cantorm:  Good start to the defense, but should not be enough to beat it|pg||\r
+nt|Cantorm:  S wonât be in again to play another @c thru|pg||\r
+pc|cQ|pc|cA|pc|c4|pg||\r
+nt|Cantorm:  Creating the split tenace|pg||\r
+nt|Cantorm:  The 9 was v revealing of the @c position|pg||\r
+nt|Cantorm:  I think weâll see another 9 led next|pg||\r
+pc|s4|pc|sA|pc|s8|pc|s5|pg||\r
+pc|dQ|pc|d3|pc|d4|pc|d6|pg||\r
+pc|dJ|pc|dK|pc|dA|pc|d8|pg||\r
+pc|d7|pc|d9|pc|dT|pc|d5|pg||\r
+pc|h8|pc|h2|pc|h4|pc|hQ|pg||\r
+pc|s6|pc|sQ|pc|s3|pc|sT|pg||\r
+pc|h3|pc|h6|pc|hT|pc|hJ|pg||\r
+pc|s2|pc|s7|pc|s9|pc|sK|pg||\r
+pc|c2|pc|c7|pc|cK|pc|c5|pg||\r
+pc|d2|pc|c6|pc|h5|pc|c8|pg||\r
+mc|8|pg||\r
+qx|c10|st||md|4SJ983H762DK53C965,SKT5HKT54DA74CQT2,S642HAQJD986CAJ87,SAQ7H983DQJT2CK43|sv|b|mb|1D|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|c9|pc|cQ|pc|cA|pc|c4|pg||\r
+pc|s6|pc|sA|pc|s3|pc|s5|pg||\r
+pc|h8|pc|h6|pc|h4|pc|hJ|pg||\r
+pc|s4|pc|sQ|pc|s9|pc|sT|pg||\r
+pc|dQ|pc|d5|pc|d4|pc|d6|pg||\r
+pc|dJ|pc|d3|pc|d7|pc|d8|pg||\r
+pc|h3|pc|h7|pc|hT|pc|hQ|pg||\r
+pc|s2|pc|s7|pc|s8|pc|sK|pg||\r
+pc|dA|pc|d9|pc|d2|pc|dK|pg||\r
+pc|h5|pc|hA|pc|h9|pc|h2|pg||\r
+pc|c7|pc|c3|mc|9|pg||\r
+qx|o11|st||md|1SAKQHT7DQ73CQ9872,SJ853HAJ9D854CA43,ST72H64DAK962CJT6,S964HKQ8532DJTCK5|sv|o|nt|Cantorm:  I imagine heâll be unhappy about that|pg||\r
+mb|1C!|mb|p|mb|1D|mb|1H|mb|d!|mb|2D!|mb|2N!|mb|3H|mb|p|mb|p|mb|p|pc|sQ|pc|s3|pc|sT|pc|s6|pg||\r
+pc|c2|pc|c3|pc|cT|pc|cK|pg||\r
+pc|s9|pc|sK|pc|s5|pc|s7|pg||\r
+pc|d3|pc|d4|pc|dK|pc|dJ|pg||\r
+pc|c6|pc|c5|pc|c7|pc|cA|pg||\r
+pc|hA|pc|h4|pc|h2|pc|h7|pg||\r
+mc|8|pg||\r
+qx|c11|st||md|1SAKQHT7DQ73CQ9872,SJ853HAJ9D854CA43,ST72H64DAK962CJT6,S964HKQ8532DJTCK5|sv|o|mb|1C|mb|p|mb|1D|mb|2H|mb|p|mb|p|mb|d|mb|p|mb|3D|mb|3H|mb|p|mb|p|mb|p|pc|sA|pc|s3|pc|sT|pc|s4|pg||\r
+pc|d3|pc|d4|pc|dK|pc|dT|pg||\r
+pc|cJ|pc|c5|pc|c2|pc|cA|pg||\r
+pc|s5|pc|s7|pc|s9|pc|sQ|pg||\r
+pc|d7|pc|d8|pc|dA|pc|dJ|pg||\r
+pc|cT|pc|cK|pc|c7|pc|c3|pg||\r
+pc|h2|pc|h7|pc|hA|pc|h4|pg||\r
+pc|hJ|pc|h6|pc|h3|pc|hT|pg||\r
+pc|h9|pc|d2|pc|hK|pc|c8|pg||\r
+pc|hQ|pc|c9|pc|s8|pc|c6|pg||\r
+pc|h8|mc|8|pg||\r
+qx|o12|st||md|2SAQ543HK5DQJ8CJ95,SJT76HQT2D53CAQ63,S982HJ743DK9CKT84,SKHA986DAT7642C72|sv|n|mb|p|mb|p|mb|1D|mb|1S|mb|1N|mb|2S|nt|Cantorm:  Link to scores. https://magictd.com/swan/magic/www.php?nsid=2403&csm=Rank&nt=3&nb=1&csh=00000000001111|pg||\r
+mb|p|mb|p|mb|p|pc|d5|nt|Cantorm:  E is hugely better than me, but Iâd have hated to sell out to 2@s. But same in other room|pg||\r
+pc|d9|pc|dA|pc|d8|pg||\r
+pc|d7|pc|dJ|pc|d3|pc|dK|pg||\r
+nt|Cantorm:  No sorry, other room pushed to 3@s|pg||\r
+pc|s2|pc|sK|pc|sA|pc|s6|pg||\r
+pc|s4|pc|sT|pc|s8|pc|d2|pg||\r
+pc|sJ|pc|s9|pc|d4|pc|sQ|pg||\r
+pc|cJ|pc|cQ|pc|cK|pc|c2|pg||\r
+pc|c4|pc|c7|pc|c9|pc|c3|pg||\r
+pc|dQ|pc|h2|pc|h3|pc|d6|pg||\r
+pc|c5|pc|cA|pc|c8|pc|h6|pg||\r
+pc|s7|mc|8|pg||\r
+qx|c12|st||md|2SAQ543HK5DQJ8CJ95,SJT76HQT2D53CAQ63,S982HJ743DK9CKT84,SKHA986DAT7642C72|sv|n|mb|p|mb|p|mb|1D|mb|1S|mb|1N|mb|2S|mb|3D|mb|3S|mb|p|mb|p|mb|p|pc|d5|pc|d9|pc|dA|pc|dQ|pg||\r
+pc|h8|pc|hK|pc|h2|pc|h3|pg||\r
+pc|sA|pc|s6|pc|s2|pc|sK|pg||\r
+pc|c5|pc|c3|pc|cT|pc|c2|pg||\r
+pc|dK|pc|d2|pc|d8|pc|d3|pg||\r
+pc|s8|pc|d4|pc|sQ|pc|s7|pg||\r
+pc|cJ|pc|cQ|pc|cK|pc|c7|pg||\r
+pc|c4|pc|d6|pc|c9|pc|cA|pg||\r
+pc|sT|pc|s9|pc|d7|pc|s3|pg||\r
+pc|sJ|pc|h4|pc|dT|pc|s4|pg||\r
+pc|hT|pc|h7|pc|hA|pc|h5|pg||\r
+mc|8|pg||\r
+qx|o13|st||md|3SQ5HJ84DAT632CT74,SK872HK9DKJ875CAK,SAJ43HT76D9CQ9832,ST96HAQ532DQ4CJ65|sv|b|mb|p|mb|p|mb|p|mb|2D!|mb|p|mb|2S!|mb|p|mb|2N|mb|p|mb|3C!|mb|p|mb|3N|mb|p|mb|p|mb|p|nt|Cantorm:  Guessing 2@d an upgrade to the increasingly popular 18-19 balanced|pg||\r
+pc|c3|nt|Cantorm:  Or maybe some form of multi|pg||\r
+pc|c5|pc|cT|pc|cK|pg||\r
+pc|d5|pc|d9|pc|dQ|pc|dA|pg||\r
+pc|c7|pc|cA|pc|c2|pc|c6|pg||\r
+pc|hK|pc|h6|pc|h2|pc|h4|pg||\r
+pc|h9|pc|h7|pc|hA|pc|h8|pg||\r
+pc|hQ|pc|hJ|pc|s7|pc|hT|pg||\r
+nt|Cantorm:  Which the 2@s response suggests|pg||\r
+mc|9|pg||\r
+qx|c13|st||md|3SQ5HJ84DAT632CT74,SK872HK9DKJ875CAK,SAJ43HT76D9CQ9832,ST96HAQ532DQ4CJ65|sv|b|mb|p|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|2D|mb|p|mb|2N|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|c3|pc|c5|pc|cT|pc|cA|pg||\r
+pc|d5|pc|d9|pc|dQ|pc|dA|pg||\r
+pc|h4|pc|hK|pc|hT|pc|h2|pg||\r
+pc|dK|pc|h7|pc|d4|pc|d3|pg||\r
+pc|dJ|pc|s3|pc|s6|pc|d2|pg||\r
+pc|d8|pc|h6|pc|s9|pc|dT|pg||\r
+pc|c7|pc|cK|pc|c2|pc|c6|pg||\r
+pc|d7|pc|s4|pc|cJ|pc|d6|pg||\r
+pc|h9|mc|10|pg||\r
+qx|o14|st||md|4SKQJ62HTDQT8763C8,S954HA96DK942CQ75,ST83HQ753DJ5CAT64,SA7HKJ842DACKJ932|sv|o|mb|1H|mb|2H!|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|sK|pc|s4|pc|s8|pc|sA|pg||\r
+pc|dA|pc|d3|pc|d2|pc|d5|pg||\r
+pc|h2|pc|hT|pc|hA|pc|h3|pg||\r
+pc|dK|pc|dJ|pc|s7|pc|d6|pg||\r
+pc|h9|pc|h5|pc|h4|pc|s6|pg||\r
+pc|h6|pc|h7|pc|hJ|pc|d7|pg||\r
+pc|hK|pc|d8|pc|s5|pc|hQ|pg||\r
+pc|c2|pc|c8|pc|cQ|pc|cA|pg||\r
+mc|10|pg||\r
+qx|c14|st||md|4SKQJ62HTDQT8763C8,S954HA96DK942CQ75,ST83HQ753DJ5CAT64,SA7HKJ842DACKJ932|sv|o|mb|1H|mb|2H|mb|2S|mb|p|mb|4H|mb|p|mb|p|mb|p|pc|sK|pc|s4|pc|s8|pc|sA|pg||\r
+pc|hK|pc|hT|pc|h6|pc|h3|pg||\r
+pc|h2|pc|s2|pc|hA|pc|h5|pg||\r
+pc|dK|pc|d5|pc|dA|pc|d3|pg||\r
+pc|cK|pc|c8|pc|c5|pc|c4|pg||\r
+pc|c2|pc|d6|pc|cQ|pc|cA|pg||\r
+pc|hQ|pc|h4|pc|d7|pc|h9|pg||\r
+pc|s3|pc|s7|pc|sJ|pc|s5|pg||\r
+pc|sQ|pc|s9|pc|sT|pc|h8|pg||\r
+pc|hJ|pc|s6|pc|d2|pc|h7|pg||\r
+pc|cJ|pc|d8|pc|c7|pc|c6|pg||\r
+mc|8|pg||\r
+qx|o15|st||md|1SAQHAK32DAQCKQT43,SKT85HQ5DJT9CA972,SJ632H984DK6532C8,S974HJT76D874CJ65|sv|n|mb|2C!|mb|p|mb|2D!|mb|p|mb|2H!|mb|p|mb|2S!|mb|p|mb|2N|mb|p|mb|3C!|mb|p|mb|3H|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|dJ|pc|d2|pc|d8|pc|dA|pg||\r
+pc|cK|pc|c2|pc|c8|pc|c6|pg||\r
+pc|dQ|pc|dT|pc|d3|pc|d4|pg||\r
+pc|cQ|pc|cA|pc|h4|pc|c5|pg||\r
+pc|c9|pc|d5|pc|cJ|pc|c4|pg||\r
+pc|s4|pc|sA|pc|s5|pc|s2|pg||\r
+pc|cT|pc|c7|pc|d6|pc|d7|pg||\r
+pc|hA|pc|h5|pc|h8|pc|h6|pg||\r
+pc|hK|pc|hQ|pc|h9|pc|hT|pg||\r
+pc|c3|pc|s8|pc|s3|pc|h7|pg||\r
+pc|sQ|pc|sT|pc|s6|pc|s7|pg||\r
+pc|h2|pc|d9|pc|dK|pc|hJ|pg||\r
+pc|s9|pc|h3|pc|sK|pc|sJ|pg||\r
+pg||\r
+qx|c15|st||md|1SAQHAK32DAQCKQT43,SKT85HQ5DJT9CA972,SJ632H984DK6532C8,S974HJT76D874CJ65|sv|n|mb|2C|mb|p|mb|2D|mb|p|mb|2N|mb|p|mb|3C|mb|p|mb|3D|mb|p|mb|3H|mb|p|mb|3N|mb|p|mb|p|mb|p|pc|dJ|pc|d2|pc|d8|pc|dA|pg||\r
+pc|dQ|pc|dT|pc|d3|pc|d7|pg||\r
+pc|h2|pc|hQ|pc|h4|pc|h6|pg||\r
+pc|c9|pc|c8|pc|cJ|pc|cQ|pg||\r
+pc|cK|pc|c2|pc|s2|pc|c5|pg||\r
+pc|c3|pc|c7|pc|d5|pc|c6|pg||\r
+pc|cA|pc|h8|pc|d4|pc|c4|pg||\r
+pc|sT|pc|s3|pc|s7|pc|sQ|pg||\r
+mc|9|pg||\r
+qx|o16|st||md|2SJ52HJ4DJ63CAJ865,SA983HTDT8742CK97,SK6HAK732DK95CT42,SQT74HQ9865DAQCQ3|sv|e|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|p|mb|p|pc|d4|pc|d5|pc|dQ|pc|d3|pg||\r
+pc|s4|pc|s5|pc|s8|pc|sK|pg||\r
+pc|cT|pc|cQ|pc|c5|pc|c7|pg||\r
+pc|sT|pc|sJ|pc|sA|pc|s6|pg||\r
+pc|d2|pc|d9|pc|dA|pc|d6|pg||\r
+pc|sQ|pc|s2|pc|s3|pc|h2|pg||\r
+pc|s7|pc|c6|pc|s9|pc|h3|pg||\r
+pc|d7|pc|dK|pc|h5|pc|dJ|pg||\r
+pc|c2|pc|c3|pc|cJ|pc|cK|pg||\r
+pc|dT|pc|h7|mc|4|pg||\r
+qx|c16|st||md|2SJ52HJ4DJ63CAJ865,SA983HTDT8742CK97,SK6HAK732DK95CT42,SQT74HQ9865DAQCQ3|sv|e|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|p|mb|p|pc|d4|pc|d5|pc|dQ|pc|d6|pg||\r
+pc|s7|pc|s5|pc|s3|pc|sK|pg||\r
+pc|h2|pc|hQ|pc|h4|pc|hT|pg||\r
+pc|s4|pc|sJ|pc|sA|pc|s6|pg||\r
+pc|s9|pc|c2|pc|sT|pc|s2|pg||\r
+pc|sQ|pc|c6|pc|s8|pc|h3|pg||\r
+pc|c3|pc|c5|pc|cK|pc|c4|pg||\r
+pc|d2|pc|d9|pc|dA|pc|d3|pg||\r
+pc|cQ|mc|6|pg||\r
+`;export{p as default};

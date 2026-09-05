@@ -76,6 +76,8 @@ h1 { max-width: 690px; font-size: clamp(56px, 6.6vw, 94px); line-height: .94; }
 h1 em, .quote-band em { color: var(--gold); font-weight: inherit; }
 .hero-lead { max-width: 590px; margin: 32px 0; color: var(--muted); font-size: clamp(17px, 1.65vw, 21px); line-height: 1.65; }
 .hero-actions { display: flex; align-items: center; gap: 25px; }
+.download-link, .closing-download { color: var(--gold); font-size: 13px; font-weight: 700; letter-spacing: .035em; text-decoration: none; }
+.download-link:hover, .closing-download:hover { color: var(--gold-bright); }
 .primary-button {
   min-height: 52px; padding: 0 21px; display: inline-flex; align-items: center; gap: 24px;
   border: 1px solid var(--gold); border-radius: 2px; color: #10261f; background: var(--gold);
@@ -183,6 +185,7 @@ h2 { font-size: clamp(45px, 5.2vw, 72px); line-height: 1.02; }
 .progress-list{border-top:1px solid var(--line)}.progress-list>div{min-height:96px;display:grid;grid-template-columns:45px 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}.progress-list>div>span{color:#657970;font:500 12px var(--serif)}.progress-list p{margin:0}.progress-list b,.progress-list small{display:block}.progress-list b{font:500 19px var(--serif)}.progress-list small{margin-top:5px;color:#789087;font-size:11px}.progress-list em{color:var(--gold);font-size:9px;font-style:normal;letter-spacing:.1em;text-transform:uppercase}
 
 .closing{padding-block:145px;text-align:center}.closing-mark{width:92px;height:92px;margin:0 auto 30px;display:block;filter:drop-shadow(0 0 25px rgba(216,182,107,.14))}.closing h2{margin-bottom:25px}.closing>p:not(.section-kicker){max-width:530px;margin:0 auto 30px;color:var(--muted);line-height:1.7}.closing .primary-button{color:var(--gold);background:transparent}.closing .primary-button:hover{color:#10261f;background:var(--gold-bright);transform:translateY(-2px)}
+.closing-download { display: block; width: max-content; margin: 18px auto 10px; }
 .closing-note { display: block; margin-top: 17px; color: #61756c; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
 footer{min-height:110px;padding:25px max(24px,calc((100vw - 1180px)/2));display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border-top:1px solid rgba(255,255,255,.08);color:#687c73;font-size:10px}footer>span{justify-self:end}footer .brand{color:var(--ink)}footer .brand-mark{width:33px;height:33px}
 
