@@ -1,39 +1,113 @@
 <!doctype html>
+<!-- Generato da templates/public-site e config/legal-identity.json: usare npm run legal:sync. -->
 <html lang="it">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Informativa sulla privacy di GrandBridge.">
-  <title>Privacy — GrandBridge</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+  <meta name="description" content="Informativa sul trattamento dei dati personali di GrandBridge.">
+  <meta name="robots" content="noindex">
+  <title>Informativa privacy — GrandBridge</title>
+  <link rel="icon" href="assets/grandbridge-moneta.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#092c24">
   <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-<header><a class="brand" href="index.html"><img src="assets/grandbridge-moneta.svg" alt=""><span>GrandBridge</span></a><nav><a href="support.html">Supporto</a><a href="account-deletion.html">Elimina account</a></nav></header>
-<main><article>
-  <p class="eyebrow">Ultimo aggiornamento · 23 agosto 2026</p>
-  <h1>Privacy</h1>
-  <p>Questa informativa descrive come GrandBridge tratta i dati necessari per account, gioco online, profilo sociale, competizioni e assistenza. GrandBridge non vende dati personali, non mostra pubblicità e non usa i dati per tracciare le persone tra app o siti di aziende diverse.</p>
-  <h2>Dati trattati</h2>
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<header><a class="brand" href="index.html"><img src="assets/grandbridge-moneta.svg" width="76" height="76" alt=""><span><strong>GrandBridge</strong><small>Al tavolo, con passione.</small></span></a><nav aria-label="Assistenza"><a href="support.html">Supporto</a><a href="account-deletion.html">Elimina account</a></nav></header>
+<main id="contenuto"><article>
+  <p class="eyebrow">Versione 2 · pubblicata il 6 settembre 2026</p>
+  <h1>Informativa privacy</h1>
+  <p>Questa informativa riguarda il sito, l’app GrandBridge e i servizi collegati, ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 (GDPR). La gratuità e lo stato di beta non riducono gli obblighi di protezione dei dati.</p>
+
+  <nav class="document-index" aria-label="Indice dell’informativa"><p>In questa informativa</p><ol><li><a href="#titolare">1. Titolare e contatti</a></li><li><a href="#dati">2. Dati trattati</a></li><li><a href="#finalita">3. Finalità e basi giuridiche</a></li><li><a href="#figb">4. Collegamento FIGB</a></li><li><a href="#destinatari">5. Destinatari e visibilità</a></li><li><a href="#trasferimenti">6. Trasferimenti esteri</a></li><li><a href="#conservazione">7. Conservazione e cancellazione</a></li><li><a href="#memoria">8. Memoria locale</a></li><li><a href="#automatismi">9. Elaborazioni automatiche</a></li><li><a href="#diritti">10. Diritti e reclami</a></li><li><a href="#minori">11. Minori</a></li><li><a href="#sicurezza">12. Sicurezza e aggiornamenti</a></li></ol></nav>
+
+  <h2 id="titolare">1. Titolare e contatti riservati</h2>
+  <p>Il titolare del trattamento è <strong>Guido Gentile</strong>, con recapito postale <strong>Via Ruggero Bonghi 11B — 00186 Roma</strong>. Per richieste privacy ed esercizio dei diritti: <a href="mailto:guido.gentile.ing@gmail.com">guido.gentile.ing@gmail.com</a>.</p>
+  <p>  Le richieste sulla protezione dei dati sono indirizzate direttamente al titolare.</p>
+  <p>Non inviare richieste privacy, documenti d’identità, password o dati personali nelle segnalazioni pubbliche su GitHub.</p>
+
+  <h2 id="dati">2. Dati trattati e provenienza</h2>
   <ul>
-    <li><strong>Account:</strong> email, identificativo utente e credenziali gestite in forma protetta dal servizio di autenticazione.</li>
-    <li><strong>Profilo:</strong> nome visualizzato, foto facoltativa, paese, anno di nascita, lingue, livello e dati federali forniti volontariamente.</li>
-    <li><strong>Gioco:</strong> partecipazioni, licite, carte giocate, risultati, replay, tornei, classifiche e log necessari all’integrità delle competizioni.</li>
-    <li><strong>Contenuti sociali:</strong> amicizie, inviti, messaggi, segnalazioni e preferenze di sicurezza.</li>
-    <li><strong>Dati tecnici:</strong> informazioni strettamente necessarie a sessioni, sicurezza, prevenzione abusi e affidabilità del servizio.</li>
+    <li><strong>Account:</strong> email, identificativo, informazioni di autenticazione e sessione. Nella prima beta pubblica l’accesso avviene tramite Google: riceviamo i dati autorizzati dal provider, come identificativo, email, nome e immagine, ma non la password Google. Supabase gestisce l’autenticazione e la sessione.</li>
+    <li><strong>Profilo:</strong> nome visualizzato, foto facoltativa, codice amico, paese, lingue, anno di nascita, livello, preferenze e dati federali forniti o importati attraverso le funzioni richieste.</li>
+    <li><strong>Gioco:</strong> partecipazioni, compagni e avversari, licite, carte, tempi e azioni di gioco, risultati, classifiche, replay, allenamenti, sfide e tornei.</li>
+    <li><strong>Relazioni e comunicazioni:</strong> amicizie, inviti, circoli, messaggi, blocchi, segnalazioni, contestazioni e moderazione. Questi dati possono provenire anche da altri partecipanti.</li>
+    <li><strong>FIGB:</strong> codice tessera, livello, tornei e risultati ottenuti dalle fonti federali, comprese pagine pubbliche, e dalle consultazioni personali richieste. Le classifiche possono includere nominativi e risultati di altri partecipanti pubblicati dalla fonte.</li>
+    <li><strong>Dati tecnici e assistenza:</strong> indirizzo IP e informazioni delle richieste trattate dai fornitori, sessioni, errori, registri di sicurezza e accessi amministrativi; informazioni comunicate per ricevere assistenza.</li>
   </ul>
-  <h2>Finalità e basi del trattamento</h2>
-  <p>I dati sono usati per creare e proteggere l’account, offrire le funzioni richieste, sincronizzare partite e competizioni, moderare contenuti, prevenire frodi e abusi, rispondere all’assistenza e adempiere agli obblighi applicabili. Le basi sono l’esecuzione del servizio, il consenso quando richiesto, il legittimo interesse alla sicurezza e gli obblighi di legge.</p>
-  <h2>Fornitori e trasferimenti</h2>
-  <p>GrandBridge usa fornitori tecnici per autenticazione, database, archiviazione e infrastruttura realtime, tra cui Supabase e Railway. Le integrazioni FIGB vengono attivate dall’utente per leggere i dati federali richiesti. I fornitori trattano dati secondo i rispettivi accordi e misure di sicurezza.</p>
-  <h2>Conservazione</h2>
-  <p>I dati dell’account restano finché l’account è attivo o per il periodo necessario alle finalità indicate. Messaggi, segnalazioni e log possono avere tempi diversi per sicurezza e moderazione. Alla cancellazione, i dati personali e le credenziali vengono rimossi; i risultati e i log indispensabili a preservare l’integrità delle competizioni possono restare in forma anonima.</p>
-  <h2>Scelte e diritti</h2>
-  <p>Dal Profilo puoi modificare dati e visibilità oppure eliminare definitivamente l’account. Puoi inoltre chiedere accesso, rettifica, portabilità, limitazione o opposizione tramite la <a href="support.html">pagina di supporto</a>. È possibile rivolgersi all’autorità di controllo competente.</p>
-  <h2>Minori</h2>
-  <p>L’app deve essere usata nel rispetto dell’età minima mostrata nello store e delle regole applicabili nel paese dell’utente. Le funzioni di comunicazione includono segnalazione, blocco e strumenti di protezione.</p>
-  <h2>Contatti</h2>
-  <p>Il titolare del progetto GrandBridge è raggiungibile tramite il canale indicato nella <a href="support.html">pagina di supporto</a>.</p>
+  <p>Non sono richiesti dati sanitari, convinzioni religiose o politiche né altre categorie particolari di dati: evita di inserirli nei campi liberi. Durante la fase gratuita non sono richiesti carta di credito o dati di pagamento.</p>
+
+  <h2 id="finalita">3. Finalità, basi giuridiche e facoltatività</h2>
+  <ul>
+    <li><strong>Account e funzioni richieste</strong> — autenticazione, gioco, archivio, socialità e consultazione FIGB: esecuzione del servizio o misure precontrattuali richieste, articolo 6(1)(b) GDPR, per i trattamenti oggettivamente necessari.</li>
+    <li><strong>Sicurezza e regolarità del gioco</strong> — prevenzione degli abusi, protezione degli account e moderazione: legittimo interesse del titolare e degli utenti, articolo 6(1)(f), previa valutazione di necessità, proporzionalità e impatto sulle persone.</li>
+    <li><strong>Assistenza sul servizio:</strong> articolo 6(1)(b). <strong>Richieste sui diritti e obblighi delle autorità:</strong> articolo 6(1)(c), per l’obbligo concretamente applicabile.</li>
+    <li><strong>Controversie:</strong> legittimo interesse ad accertare o difendere un diritto, articolo 6(1)(f), limitatamente ai dati e al periodo necessari.</li>
+  </ul>
+  <p>Senza i dati necessari all’autenticazione non puoi creare o utilizzare un account. Foto, integrazione FIGB e funzioni sociali facoltative non sono necessarie per il solo accesso; non fornire i dati indispensabili a una funzione opzionale può impedirne l’utilizzo. Puoi gestire le opzioni di visibilità disponibili nel profilo.</p>
+  <p>La lettura dell’informativa non costituisce un consenso generale. Eventuali nuovi trattamenti facoltativi che richiedano consenso prevederanno una richiesta separata e la possibilità di revoca, senza pregiudicare la liceità del trattamento precedente. In questa beta non sono previste campagne pubblicitarie o profilazione commerciale.</p>
+
+  <h2 id="figb">4. Collegamento FIGB</h2>
+  <p>Quando una consultazione richiede la password FIGB, puoi fornirla per la richiesta oppure scegliere di salvarla cifrata sul server per riutilizzarla. Il comando dedicato consente di rimuovere le credenziali salvate. La cifratura permette al servizio di recuperarle per l’accesso richiesto: non rende la password anonima.</p>
+  <p>GrandBridge salva un indice personale dei tornei con date, titoli, fonti e risultati e mantiene copie locali di alcuni dati consultati. Rimuovere la password non cancella questo storico. FIGB gestisce i propri servizi secondo la propria informativa; eliminare l’account GrandBridge non elimina dati presso FIGB o altre fonti originarie.</p>
+
+  <h2 id="destinatari">5. Destinatari e visibilità</h2>
+  <p>Possono trattare dati le persone autorizzate all’amministrazione e all’assistenza e i fornitori tecnici, secondo le rispettive funzioni. Gli incarichi per attività svolte per conto del titolare devono essere disciplinati ai sensi dell’articolo 28 GDPR.</p>
+  <ul>
+    <li><strong>Supabase Pte. Ltd.:</strong> autenticazione, database, archiviazione immagini e funzioni server.</li>
+    <li><strong>Railway Corporation:</strong> gioco online, comprese sfide asincrone, e relativi dati tecnici.</li>
+    <li><strong>GitHub:</strong> sito pubblico, download e segnalazioni pubbliche; può trattare dati tecnici di navigazione. Le segnalazioni pubblicate sono visibili ad altri.</li>
+    <li><strong>Google:</strong> autenticazione se scegli questo accesso; il sito principale carica inoltre caratteri da Google Fonts. Le pagine Privacy, Supporto ed Elimina account usano caratteri del dispositivo.</li>
+    <li><strong>FIGB e fonti federali:</strong> consultazioni e autenticazione richieste dalle funzionalità federali.</li>
+    <li><strong>Altri utenti, organizzatori, direttori e moderatori:</strong> dati di profilo, partite, comunicazioni e competizioni secondo visibilità e ruoli. Classifiche e profili pubblici sono consultabili dal pubblico previsto dalla funzione.</li>
+    <li><strong>Autorità e consulenti:</strong> nei casi necessari per obblighi applicabili o tutela di diritti.</li>
+  </ul>
+  <p>Nella prima beta non viene utilizzato un servizio dedicato per email automatiche: registrazione e accesso avvengono tramite Google, mentre assistenza e richieste privacy sono ricevute direttamente all’indirizzo indicato sopra. Google, FIGB e GitHub possono agire come titolari autonomi per le attività che determinano direttamente.</p>
+
+  <h2 id="trasferimenti">6. Trasferimenti fuori dallo Spazio economico europeo</h2>
+  <p>Alla data della revisione, il progetto Supabase usa la regione <strong>eu-central-1 (Germania)</strong>. Il server Railway è nella regione <strong>sfo (Stati Uniti)</strong>: i dati necessari al gioco online sono quindi trattati anche fuori dal SEE. Anche assistenza e subfornitori possono comportare trasferimenti; la regione del database non esaurisce il trattamento.</p>
+  <p>Il <a href="https://supabase.com/legal/customer-resources/data-processing-addendum">Data Processing Addendum di Supabase</a> integra le condizioni del servizio e include le clausole contrattuali standard europee. Il <a href="https://railway.com/legal/dpa">Data Processing Addendum di Railway</a> prevede le clausole contrattuali standard europee e misure supplementari; il titolare ne completa l’esecuzione prima di aprire al pubblico le funzioni di gioco online che usano Railway.</p>
+  <p>Per ridurre i trasferimenti, il database principale resta in Germania e sul server Railway transitano soltanto i dati necessari alla sessione online e alla sua continuità. Il titolare riesamina fornitori, subfornitori, paesi coinvolti e misure applicabili quando cambia il servizio. Puoi chiedere al contatto privacy informazioni sulle garanzie e una copia delle parti pertinenti, oscurando soltanto le informazioni riservate non necessarie.</p>
+
+  <h2 id="conservazione">7. Conservazione breve e cancellazione</h2>
+  <p><strong>Conserviamo uno storico limitato al tempo necessario per giocare e usare le funzioni richieste.</strong> La beta offre uno storico recente e non un servizio di archiviazione permanente. I termini indicati sono limiti ordinari massimi, non durate minime garantite; puoi chiedere prima la cancellazione nei casi previsti dalla legge.</p>
+  <ul>
+    <li><strong>Partite concluse, replay, risultati e classifiche personali:</strong> fino a 90 giorni dalla conclusione, per consultazione recente e correzione di errori.</li>
+    <li><strong>Storico FIGB memorizzato da GrandBridge:</strong> fino a 90 giorni dalla prima importazione. La sola lettura non prolunga il termine. Una nuova consultazione richiesta dopo la cancellazione può acquisire nuovamente dati dalla fonte federale; la conservazione presso FIGB segue le regole della fonte.</li>
+    <li><strong>Messaggi e relative traduzioni:</strong> fino a 90 giorni dalla creazione, comprese le copie non più visibili. La lettura o la modifica non rinnova il periodo.</li>
+    <li><strong>Dati tecnici ordinari e registri degli errori:</strong> fino a 30 giorni dall’evento, per individuare e risolvere problemi.</li>
+    <li><strong>Richieste di assistenza e richieste sui dati:</strong> durante la gestione e fino a 90 giorni dalla chiusura, per verificarne l’esito e gestire eventuali seguiti.</li>
+    <li><strong>Registri ordinari di moderazione e accessi amministrativi:</strong> fino a 90 giorni dall’evento. Le segnalazioni e gli appelli sono conservati durante la gestione e fino a 90 giorni dalla chiusura definitiva; la necessità di mantenere aperto un caso è riesaminata almeno ogni 30 giorni.</li>
+    <li><strong>Account, profilo e relazioni necessari al servizio:</strong> mentre l’account è attivo. Dopo 180 giorni senza utilizzo autenticato ne è prevista la cancellazione, con un preavviso di almeno 30 giorni per consentire di tornare a utilizzare il servizio o richiedere i propri dati. I dati facoltativi possono essere rimossi prima.</li>
+    <li><strong>Credenziali FIGB salvate facoltativamente:</strong> fino alla rimozione richiesta, alla cancellazione dell’account o a 30 giorni senza utilizzo, secondo l’evento che si verifica prima.</li>
+    <li><strong>Registrazioni delle accettazioni:</strong> per la gestione del rapporto durante l’utilizzo dell’account e fino a 90 giorni dalla cessazione. Le copie dei testi legali pubblicati restano separate dalle registrazioni riferite ai singoli utenti.</li>
+  </ul>
+  <p><strong>Cancellazione dell’account.</strong> Le operazioni automatizzabili vengono eseguite subito; il completamento sui sistemi attivi è previsto entro 30 giorni dalla richiesta, salvo le eccezioni motivate descritte sotto. La sostituzione del nome con “Account eliminato” non costituisce, da sola, anonimizzazione: anche gli eventuali residui collegabili alla persona devono essere rimossi o conservati solo con una base e una durata giustificate.</p>
+  <p><strong>Copie di sicurezza.</strong> Al lancio non è attivo un backup aggiuntivo gestito direttamente dal titolare e la beta non promette il recupero dello storico in caso di perdita tecnica. Le eventuali copie tecniche mantenute dai fornitori seguono i relativi accordi e hanno accesso limitato; non vengono usate per prolungare lo storico ordinario. Se verrà attivato un backup locale, sarà adottata una rotazione non superiore a 30 giorni e, in caso di ripristino, saranno riapplicate le cancellazioni già richieste. L’informativa sarà aggiornata prima di utilizzare tale backup.</p>
+  <p><strong>Eccezioni circoscritte.</strong> Solo i dati necessari a un obbligo di legge concretamente applicabile, a un incidente in gestione o all’accertamento, esercizio o difesa di un diritto in una controversia effettiva possono essere conservati oltre i termini ordinari. Il motivo, il perimetro e la durata vengono documentati, l’accesso limitato e la necessità riesaminata almeno ogni 30 giorni. Cessata la ragione, i dati vengono eliminati senza ritardo. Un generico possibile reclamo futuro non giustifica la conservazione dell’intero account.</p>
+  <p>I termini di conservazione non riducono il diritto di accesso, cancellazione, opposizione, portabilità o reclamo. La gratuità non comporta rinunce ai diritti né esenzioni dagli obblighi di protezione dei dati. La scadenza della fase gratuita al 31 dicembre 2027 non prolunga automaticamente questi termini.</p>
+  <p>Consulta <a href="account-deletion.html">Elimina account</a> per avviare la procedura. Disinstallare l’app non cancella l’account sul server. Le copie locali sul dispositivo possono richiedere la cancellazione dei dati dell’app o del browser.</p>
+
+  <h2 id="memoria">8. Memoria locale e servizi esterni</h2>
+  <p>L’app usa memoria locale per sessione, preferenze, partite e dati consultati. Le copie possono restare dopo la chiusura della sessione e si rimuovono anche cancellando i dati dell’app o del browser. Non tutti i dati locali sono sincronizzati sul server.</p>
+  <p>La beta non integra pubblicità comportamentale. Il sito principale richiede caratteri a Google Fonts, comunicando dati di connessione al fornitore. Aprire link esterni, scaricare contenuti o accedere con Google comporta richieste ai rispettivi servizi. La lettura vocale delle guide usa il motore del dispositivo o del browser, che può dipendere da servizi online secondo le impostazioni dell’utente. Eventuali strumenti di tracciamento non necessari dovranno rispettare i requisiti di informazione e consenso applicabili.</p>
+
+  <h2 id="automatismi">9. Elaborazioni automatiche</h2>
+  <p>GrandBridge calcola punteggi e classifiche e può generare indicatori di anomalie per la revisione dell’integrità. Un indicatore non costituisce da solo una prova di irregolarità.</p>
+  <p>La beta non adotta decisioni che producono effetti giuridici o analogamente significativi basate unicamente su trattamenti automatizzati. Segnalazioni, sospensioni e chiusure per condotta sono sottoposte a valutazione umana e possono essere contestate tramite il contatto indicato. I soli automatismi operativi riguardano, secondo regole predeterminate, capacità temporanea, scadenza dello storico e cancellazione richiesta o preceduta dall’avviso previsto.</p>
+
+  <h2 id="diritti">10. Diritti e reclami</h2>
+  <p>Nei casi e nei limiti previsti dagli articoli 15–22 GDPR puoi chiedere accesso e copia, rettifica, cancellazione, limitazione e portabilità dei dati forniti, quando il trattamento automatizzato si fonda su contratto o consenso. Puoi opporti ai trattamenti basati sul legittimo interesse per motivi legati alla tua situazione; per marketing diretto l’opposizione è sempre esercitabile. Puoi revocare un eventuale consenso in qualsiasi momento.</p>
+  <p>Scrivi al <a href="#titolare">contatto privacy</a>, senza utilizzare canali pubblici. In caso di dubbi ragionevoli sull’identità potranno essere richieste soltanto informazioni aggiuntive proporzionate. Il riscontro deve arrivare senza ingiustificato ritardo, di regola entro un mese. Una proroga fino a ulteriori due mesi, se consentita per complessità o numero delle richieste, va comunicata e motivata entro il primo mese. Le richieste sono normalmente gratuite.</p>
+  <p>Puoi presentare reclamo al <a href="https://www.garanteprivacy.it/home/diritti/come-agire-per-tutelare-i-tuoi-dati-personali">Garante per la protezione dei dati personali</a> o all’autorità competente del paese UE in cui risiedi abitualmente, lavori o ritieni si sia verificata la violazione, e rivolgerti all’autorità giudiziaria. Non è obbligatorio contattare prima GrandBridge.</p>
+
+  <h2 id="minori">11. Minori</h2>
+  <p>Questa prima beta è riservata a persone di almeno 18 anni. All’ingresso viene richiesta una dichiarazione di maggiore età; non vengono richiesti sistematicamente documenti d’identità. Se viene segnalato un account di un minore, contatta il titolare per la verifica e la gestione dei dati. Un’eventuale futura apertura ai minori richiederà condizioni e procedure dedicate.</p>
+
+  <h2 id="sicurezza">12. Sicurezza e aggiornamenti</h2>
+  <p>La protezione dei dati richiede misure tecniche e organizzative adeguate al rischio e gestione delle violazioni. Lo stato di beta non esclude tali obblighi. Questa informativa non comporta rinunce ai diritti previsti dalla legge.</p>
+  <p>Il testo verrà aggiornato quando cambiano i trattamenti. Prima di usare i dati per nuove finalità verranno fornite le informazioni necessarie e, se richiesto, raccolto un consenso distinto. La data in alto identifica la revisione.</p>
+  <p>Riferimenti: <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679">Regolamento (UE) 2016/679</a>, <a href="https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/8981258">indicazioni del Garante</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">informativa GitHub</a> e <a href="https://policies.google.com/privacy?hl=it">informativa Google</a>.</p>
 </article></main>
-<footer><span>© 2026 GrandBridge</span><a href="index.html">Home</a><a href="support.html">Supporto</a></footer>
-</body></html>
+<footer><span>© 2026 GrandBridge</span><a href="index.html">Home</a><a href="terms.html">Condizioni d’uso</a><a href="support.html">Supporto</a><a href="#titolare">Contatti privacy</a></footer>
+</body>
+</html>
