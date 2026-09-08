@@ -23,8 +23,8 @@ automatico quando DDS non è disponibile, supera il tempo concesso o non può va
 
 ## PAR dei replay
 
-`dds-par.js` e `dds-par.wasm` sono una build GrandBridge separata, single-thread, dei sorgenti DDS 3.1.0 già vendorizzati in `android/app/src/main/cpp/vendor/dds`. Non modificano gli artefatti ufficiali degli attacchi descritti sopra. Usano `calc_dd_table` e `DealerParBin`, includendo dealer, vulnerabilità e sacrifici contrati. Conservano la stessa licenza Apache 2.0 (`LICENSE`).
+`dds-analysis.js` e `dds-analysis.wasm` sono una build GrandBridge separata, single-thread, dei sorgenti DDS 3.1.0 già vendorizzati in `android/app/src/main/cpp/vendor/dds`. Non modificano gli artefatti ufficiali degli attacchi descritti sopra. Usano `calc_dd_table` e `DealerParBin`, includendo dealer, vulnerabilità e sacrifici contrati. Restituiscono nello stesso calcolo anche le 20 combinazioni di prese per seme e dichiarante. Conservano la stessa licenza Apache 2.0 (`LICENSE`). I precedenti artefatti `dds-par.*` e `par-worker.js` restano disponibili per le versioni già pubblicate.
 
-La build è riproducibile con Emscripten 4.0.14 e `tools/dds-par/build.ps1 -Emsdk <percorso-sdk>`; wrapper in `tools/dds-par/par_wrapper.cpp`. Non richiede pthread, SharedArrayBuffer o header COOP/COEP. `par-worker.js` la carica su richiesta in un worker dedicato; il calcolo non contatta servizi esterni. Ogni worker viene terminato al completamento o dopo 60 secondi, mentre i risultati vengono conservati in una cache limitata della sessione.
+La build è riproducibile con Emscripten 4.0.14 e `tools/dds-par/build.ps1 -Emsdk <percorso-sdk>`; wrapper in `tools/dds-par/par_wrapper.cpp`. Non richiede pthread, SharedArrayBuffer o header COOP/COEP. `analysis-worker.js` la carica su richiesta in un worker dedicato; il calcolo non contatta servizi esterni. Ogni worker viene terminato al completamento o dopo 60 secondi, mentre i risultati vengono conservati in una cache limitata della sessione.
 
 Verifica del wrapper compilato: `node scripts/check-replay-par.mjs`.

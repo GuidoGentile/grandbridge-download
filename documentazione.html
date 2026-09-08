@@ -45,7 +45,7 @@
         <dl class="document-meta" aria-label="Informazioni sul documento">
           <div><dt>Edizione</dt><dd>1.1</dd></div>
           <div><dt>Data di riferimento</dt><dd>8 settembre 2026</dd></div>
-          <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.4.2-beta.4</dd></div>
+          <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.4.2-beta.7</dd></div>
           <div><dt>Stato</dt><dd>Prototipo in sviluppo attivo</dd></div>
           <div><dt>Destinatari</dt><dd>Utenti, partner, operatori, valutatori e terze parti</dd></div>
         </dl>
@@ -129,11 +129,11 @@
               </details>
               <details open>
                 <summary><span>Tavoli multiplayer realtime</span><span class="status-tag partial">In completamento</span></summary>
-                <div><p>Protocollo WebSocket versionato, quattro posti, spettatori, viste private, controllo di turno, comandi idempotenti, protezione da revisioni obsolete, heartbeat, token di riconnessione e ripristino dello stato dopo il riavvio del server.</p><p>Il nucleo server è implementato localmente. Restano la distribuzione pubblica del servizio, il collegamento completo tra presenza, inviti e tavoli persistenti, claim, annullamento, chat e collaudo prolungato con quattro dispositivi reali.</p></div>
+                <div><p>Protocollo WebSocket versionato, quattro posti, spettatori, viste private, controllo di turno, comandi idempotenti, protezione da revisioni obsolete, heartbeat, token di riconnessione e ripristino dello stato dopo il riavvio del server.</p><p>Il servizio realtime è pubblico. Restano il completamento dei flussi organizzativi e il collaudo prolungato con quattro dispositivi reali. Le verifiche locali del claim non certificano da sole l’aggiornamento del servizio online.</p></div>
               </details>
               <details open>
                 <summary><span>Storico e replay</span><span class="status-tag partial">Nucleo operativo</span></summary>
-                <div><p>Archivio personale dei board conclusi, sequenza ordinata dei comandi, ricostruzione deterministica di licita e gioco delle 52 carte, verifica dello stato finale, delle prese e del punteggio N/S.</p><p>Traveller, confronto multi-tavolo, PBN, note, statistiche avanzate e analisi double-dummy appartengono all’estensione pianificata.</p></div>
+                <div><p>Cronologia dei board conclusi con fonte, data e giocatori; gli allenamenti restano nella propria sezione. Il board apre il replay. L’icona accanto a PAR permette di scegliere Nord, Est, Sud o Ovest e di rigiocare dalla licita o dall’attacco contro tre Robot. I claim registrati conservano il risultato senza inventare le carte non giocate. Il risultato dei Campioni è quello della linea dichiarante; nelle partite personali è quello della linea dell’utente.</p><p>Il popup PAR raccoglie il prospetto double-dummy per tutti i posti e semi, con contratto e punti sovrapposti, e sotto il PAR competitivo, compresi eventuali sacrifici. Il mazziere è cerchiato nello schema. Il tocco di una casella confronta i livelli da 1 a 7 usando le prese teoriche della distribuzione e la vulnerabilità. Traveller, note e statistiche avanzate restano estensioni pianificate.</p></div>
               </details>
               <details open>
                 <summary><span>Sfide e competizioni asincrone</span><span class="status-tag available">Operative nel prodotto</span></summary>
@@ -267,13 +267,13 @@
             <h2>Dove vive oggi GrandBridge.</h2>
             <div class="deployment-list">
               <div><b>Landing e dossier</b><span>GitHub Pages, accesso pubblico</span></div>
-              <div><b>Applicazione Android</b><span>APK 0.4.2-beta.4 scaricabile manualmente; non ancora negli store</span></div>
+              <div><b>Applicazione Android</b><span>APK 0.4.2-beta.7 scaricabile manualmente; non ancora negli store</span></div>
               <div><b>Codice applicativo</b><span>Repository di sviluppo separato dalla pagina pubblica</span></div>
               <div><b>Database e account</b><span>Supabase Cloud con PostgreSQL, Auth e Storage</span></div>
               <div><b>Server di gioco realtime</b><span>Server realtime pubblico; prosegue il collaudo delle sessioni con più utenti</span></div>
               <div><b>Webapp completa</b><span>Disponibile dal browser tramite la landing page, aggiornata insieme all’APK Android</span></div>
             </div>
-            <div class="callout"><b>Aggiornamento dell’8 settembre 2026</b><p>Web App e APK includono le correzioni di adattamento ai telefoni, il PAR nel replay, la gestione dei claim e del risultato finale, la cronologia delle partite e le spiegazioni delle licite. <a href="novita.html">Leggi le novità e le verifiche effettuate.</a></p></div>
+            <div class="callout"><b>Aggiornamento dell’8 settembre 2026</b><p>Web App e APK beta 7 includono il menu a lista unica, la correzione della navigazione fra menu e pagine, il comando Rigioca comune ai replay e ai board FIGB, l’apertura diretta del PAR completo, lo storico senza aggiornamento manuale, le correzioni della didattica e i filtri del calendario eventi. Le impostazioni si applicano subito, senza pulsante Fatto. <a href="novita.html">Leggi le novità e le verifiche effettuate.</a></p></div>
           </section>
 
           <section id="stato" class="doc-section" data-reveal>
