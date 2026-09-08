@@ -1,0 +1,14 @@
+{
+  "version": "0.4.2-beta.4",
+  "versionCode": 123,
+  "package": "com.grandbridge.app",
+  "minimumAndroid": 7,
+  "apk": "GrandBridge-0.4.2-beta.4.apk",
+  "downloadUrl": "https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.4/GrandBridge-0.4.2-beta.4.apk",
+  "sha256": "AEF1457D5029532D7285F0E2EEE54B0BAEE97A12B44454B56EE4896902C59FD4",
+  "bytes": 124139795,
+  "published": true,
+  "publishedDate": "2026-09-08",
+  "webApp": "https://guidogentile.github.io/grandbridge-download/app/",
+  "notes": "https://guidogentile.github.io/grandbridge-download/novita.html"
+}
