@@ -12,6 +12,7 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 - guida video da 60 secondi disponibile online dalla landing e dalle Impostazioni dell’app, senza essere inclusa nell’APK;
 - guida completa all’utilizzo, con sommario e schermate dell’app;
 - dossier tecnico aggiornato con architettura e caratteristiche delle distribuzioni Cloud e Server;
+- corso GrandBridge in 41 lezioni basato sulla guida didattica FIGB e integrato con il metodo WBF;
 - APK Android pubblico 0.4.2-beta.8 disponibile dalla release collegata alla landing page;
 - replay unificato per storico, allenamenti e partite dei campioni, con navigazione diretta fra board;
 - tavoli avviabili con amici o Robot, tornei configurabili e sfide asincrone tra amici;
