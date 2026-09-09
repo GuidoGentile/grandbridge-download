@@ -10,6 +10,8 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 - web app accessibile direttamente dalla landing page in `/app/`;
 - app in sviluppo attivo con robot, account, multiplayer, sfide, tornei, circoli, replay e strumenti di integrità;
 - guida video da 60 secondi disponibile online dalla landing e dalle Impostazioni dell’app, senza essere inclusa nell’APK;
+- guida completa all’utilizzo, con sommario e schermate dell’app;
+- dossier tecnico aggiornato con architettura e caratteristiche delle distribuzioni Cloud e Server;
 - APK Android pubblico 0.4.2-beta.8 disponibile dalla release collegata alla landing page;
 - replay unificato per storico, allenamenti e partite dei campioni, con navigazione diretta fra board;
 - tavoli avviabili con amici o Robot, tornei configurabili e sfide asincrone tra amici;
@@ -26,5 +28,7 @@ Profilo e amici semplificati; tavoli e tornei online più immediati; PAR come pa
 - [Landing page](https://guidogentile.github.io/grandbridge-download/)
 - [Web App](https://guidogentile.github.io/grandbridge-download/app/)
 - [Novità](https://guidogentile.github.io/grandbridge-download/novita.html)
+- [Guida all’utilizzo](https://guidogentile.github.io/grandbridge-download/guida.html)
+- [Documentazione tecnica](https://guidogentile.github.io/grandbridge-download/documentazione.html)
 - [APK 0.4.2-beta.8](https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.8/GrandBridge-0.4.2-beta.8.apk)
 - [Release](https://github.com/GuidoGentile/grandbridge-download/releases/tag/v0.4.2-beta.8)

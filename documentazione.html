@@ -28,7 +28,7 @@
       </a>
       <nav aria-label="Navigazione della documentazione">
         <a href="#funzioni">Funzioni</a>
-        <a href="#ruoli">Ruoli</a>
+        <a href="guida.html">Guida d’uso</a>
         <a href="#architettura">Architettura</a>
         <a href="#stato">Stato</a>
       </nav>
@@ -43,7 +43,7 @@
           <p class="docs-lead">Descrizione organica dell’applicativo, del funzionamento, dei ruoli, dell’architettura tecnica e del percorso di evoluzione. Il documento descrive la soluzione in sviluppo, non soltanto l’APK pubblico.</p>
         </div>
         <dl class="document-meta" aria-label="Informazioni sul documento">
-          <div><dt>Edizione</dt><dd>1.1</dd></div>
+          <div><dt>Edizione</dt><dd>1.2</dd></div>
           <div><dt>Data di riferimento</dt><dd>9 settembre 2026</dd></div>
           <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.4.2-beta.8</dd></div>
           <div><dt>Stato</dt><dd>Prototipo in sviluppo attivo</dd></div>
@@ -125,15 +125,15 @@
               </details>
               <details open>
                 <summary><span>Account, profilo e vita sociale</span><span class="status-tag available">Operativa</span></summary>
-                <div><p>Accesso con email obbligatoria, profilo pubblico e privato separati, codice amico, livello bridgistico, dati federali dichiarati, avatar privato, lingue, disponibilità e pubblicazione selettiva di Paese, ASD e categoria.</p><p>Richieste di amicizia, persone seguite, blocchi bidirezionali, ricerca controllata, inviti e consultazione del sistema di licita pubblico. L’affidabilità e le partite completate sono dati calcolati dal sistema e non modificabili dal telefono.</p></div>
+                <div><p>Accesso con Google, Apple o email secondo la configurazione del servizio, profilo pubblico e privato separati, codice utente copiabile, livello bridgistico, avatar ritagliabile, lingue e pubblicazione selettiva dei dati.</p><p>Le amicizie nascono da un link di invito condivisibile e restano un rapporto reciproco: non esistono follower o ricerca pubblica dei giocatori. Affidabilità e partite completate sono calcolate dal sistema e non modificabili dal telefono.</p></div>
               </details>
               <details open>
-                <summary><span>Tavoli multiplayer realtime</span><span class="status-tag partial">In completamento</span></summary>
-                <div><p>Protocollo WebSocket versionato, quattro posti, spettatori, viste private, controllo di turno, comandi idempotenti, protezione da revisioni obsolete, heartbeat, token di riconnessione e ripristino dello stato dopo il riavvio del server.</p><p>Il nucleo server è implementato localmente. Restano la distribuzione pubblica del servizio, il collegamento completo tra presenza, inviti e tavoli persistenti, claim, annullamento, chat e collaudo prolungato con quattro dispositivi reali.</p></div>
+                <summary><span>Tavoli multiplayer realtime</span><span class="status-tag partial">Operativo in collaudo</span></summary>
+                <div><p>Protocollo WebSocket versionato, quattro posti, viste private, controllo di turno, comandi idempotenti, protezione da revisioni obsolete, heartbeat, token di riconnessione e ripristino dopo una caduta o un riavvio.</p><p>Il giocatore sceglie se entrare solo o con un compagno; Partecipa assegna il primo tavolo compatibile e Crea prepara un nuovo tavolo. Il claim viene risolto prima del risultato. Restano il collaudo prolungato con quattro dispositivi reali e le funzioni evolute di direzione, annullamento e spettatori.</p></div>
               </details>
               <details open>
-                <summary><span>Storico e replay</span><span class="status-tag partial">Nucleo operativo</span></summary>
-                <div><p>Archivio personale dei board conclusi, sequenza ordinata dei comandi, ricostruzione deterministica di licita e gioco delle 52 carte, verifica dello stato finale, delle prese e del punteggio N/S.</p><p>Traveller, confronto multi-tavolo, PBN, note, statistiche avanzate e analisi double-dummy appartengono all’estensione pianificata.</p></div>
+                <summary><span>Storico, replay e PAR</span><span class="status-tag available">Operativo</span></summary>
+                <div><p>Archivio personale dei board conclusi, ricerca libera, ricostruzione deterministica di licita e gioco, verifica di prese e punteggio dalla prospettiva corretta. Le tappe di Allenamento conservano un archivio separato.</p><p>PAR apre una pagina autonoma con contratti realizzabili, miglior risultato competitivo, sacrifici e punteggi; Rigioca permette di affrontare la stessa distribuzione da qualsiasi posizione contro tre Robot. Traveller, PBN, note e statistiche avanzate restano estensioni future.</p></div>
               </details>
               <details open>
                 <summary><span>Sfide e competizioni asincrone</span><span class="status-tag available">Operative nel prodotto</span></summary>
@@ -142,9 +142,14 @@
               <details open>
                 <summary><span>Torneo FIGB personale</span><span class="status-tag available">Operativo</span></summary>
                 <div><p>Una pagina autonoma, raggiungibile direttamente dal menu principale, individua il torneo FIGB in corso o l’ultimo giocato. La barra inferiore rende sempre accessibili Torneo, Curriculum e Classifica: Torneo presenta i principali dati dell’evento, ogni board del Curriculum apre il proprio dettaglio e la mappa del movimento resta una funzione interna.</p><p>Il dettaglio di ciascun board — distribuzione delle carte, par, analisi double-dummy, frequenze di sala e replay con il Robot ufficiale — diventa disponibile appena FIGB acquisisce il risultato dell’utente su quella mano, anche prima della conclusione del torneo. I board non ancora acquisiti restano nascosti.</p></div>
-              </details>              <details open>
+              </details>
+              <details open>
                 <summary><span>Tornei realtime</span><span class="status-tag partial">Fondazione operativa</span></summary>
                 <div><p>Schema dati per tornei, direttori, iscrizioni, lista d’attesa, coppie o squadre, turni, tavoli, risultati, classifiche, penalità, contestazioni e audit. Sono implementati movimenti Mitchell e Howell, accoppiamenti Swiss, tabelloni knockout, cronometro, verifica dei risultati e classifica esportabile.</p><p>Nell’app è disponibile la creazione del primo torneo privato a coppie Mitchell e l’iscrizione. Restano da collegare i tavoli generati alle stanze realtime e da completare il percorso del direttore turno per turno.</p></div>
+              </details>
+              <details open>
+                <summary><span>Didattica</span><span class="status-tag partial">Percorso in evoluzione</span></summary>
+                <div><p>Corso progressivo con sommario come pagina autonoma, spiegazioni brevi, rappresentazione di semi e carte coerente con il replay, esempi guidati e domande di verifica distribuite nelle lezioni.</p><p>La struttura è predisposta per un corso completo ispirato al programma didattico del bridge italiano, con testi originali adatti all’app. Contenuti e progressione continuano a essere ampliati e revisionati.</p></div>
               </details>
               <details>
                 <summary><span>Circoli e attività ordinaria</span><span class="status-tag planned">Pianificata</span></summary>
@@ -212,7 +217,7 @@
               <article><h3>App React</h3><p>Tavolo, bidding box, profilo, lobby e aree operative per ruolo. Conserva localmente soltanto preferenze di interfaccia e sessione.</p></article>
               <article><h3>Motore TypeScript</h3><p>Legalità, transizioni, prese, punteggio, robot, proiezioni private ed eventi deterministici, indipendenti da React e dal database.</p></article>
               <article><h3>Server autorevole</h3><p>Verifica identità, assegna posti, ordina i comandi, gestisce riconnessione e timer, produce viste personalizzate e persiste gli eventi confermati.</p></article>
-              <article><h3>Supabase Auth</h3><p>Gestisce account, sessioni, magic link e futuri provider social. Le build distribuite richiedono email e rifiutano utenti anonimi.</p></article>
+              <article><h3>Supabase Auth</h3><p>Gestisce account e sessioni con accesso Google, Apple o email. Le build distribuite rifiutano utenti anonimi.</p></article>
               <article><h3>Postgres</h3><p>Conserva profili, relazioni, convenzioni, sessioni, board, eventi, sfide, tornei, risultati, ruoli e audit con modelli relazionali.</p></article>
               <article><h3>Storage</h3><p>Conserva asset utente come gli avatar in spazi privati, accessibili tramite regole specifiche e collegamenti temporanei.</p></article>
             </div>
@@ -231,7 +236,7 @@
             <p class="section-kicker">Dati, sicurezza e verificabilità</p>
             <h2>La fiducia non è affidata all’interfaccia.</h2>
             <div class="security-grid">
-              <article><h3>Identità</h3><p>Le build distribuite richiedono un account con email. Il server realtime verifica il token prima di accettare un giocatore quando opera in modalità autenticata.</p></article>
+              <article><h3>Identità</h3><p>Le build distribuite richiedono un account Google, Apple o email. Il server realtime verifica il token prima di accettare un giocatore quando opera in modalità autenticata.</p></article>
               <article><h3>Privacy selettiva</h3><p>Email, nascita, tessera e codice ASD restano privati. Paese, lingue, disponibilità, ASD e categoria vengono pubblicati soltanto su scelta del giocatore.</p></article>
               <article><h3>Carte private</h3><p>Ogni partecipante riceve soltanto la propria mano. Il morto e le altre carte diventano visibili esclusivamente quando le regole lo consentono.</p></article>
               <article><h3>Autorizzazione</h3><p>Le tabelle esposte utilizzano Row Level Security. Nascondere un pulsante non concede né revoca un permesso: il controllo avviene sui dati e sul server.</p></article>
@@ -264,13 +269,42 @@
           <section id="distribuzione" class="doc-section" data-reveal>
             <p class="doc-number">09</p>
             <p class="section-kicker">Distribuzione e operatività</p>
-            <h2>Dove vive oggi GrandBridge.</h2>
+            <h2>Un solo prodotto, due ambienti di distribuzione.</h2>
+            <p>GrandBridge Cloud e GrandBridge Server utilizzano lo stesso sorgente, la stessa interfaccia, lo stesso motore di bridge e lo stesso insieme di funzioni. Cambiano esclusivamente la destinazione dei servizi, l’identificativo dell’app e i dati a cui ciascuna installazione accede.</p>
+            <div class="edition-grid">
+              <article>
+                <span class="status-tag available">Pubblica</span>
+                <h3>GrandBridge Cloud</h3>
+                <p>È la Web App e l’APK pubblico. Usa Supabase Cloud per account, database e Storage e il servizio realtime pubblico per i tavoli online.</p>
+                <ul><li>pacchetto Android <code>com.grandbridge.app</code>;</li><li>account e dati dell’ambiente cloud;</li><li>accesso Google, Apple ed email configurato nell’ambiente pubblico;</li><li>aggiornamento insieme alla Web App pubblica.</li></ul>
+              </article>
+              <article>
+                <span class="status-tag partial">Distribuzione controllata</span>
+                <h3>GrandBridge Server</h3>
+                <p>È una confezione distinta dello stesso client, predisposta per collegarsi a un’installazione GrandBridge amministrata su infrastruttura dedicata.</p>
+                <ul><li>pacchetto Android <code>com.grandbridge.app.server</code>;</li><li>API e WebSocket configurabili per l’ambiente dedicato;</li><li>account, sessioni e dati completamente separati dal cloud;</li><li>installazione affiancabile alla versione cloud sullo stesso telefono.</li></ul>
+              </article>
+            </div>
+            <h3>Caratteristiche tecniche della versione Server</h3>
+            <table>
+              <thead><tr><th>Area</th><th>Comportamento</th><th>Vincolo di rilascio</th></tr></thead>
+              <tbody>
+                <tr><td>Codice applicativo</td><td>Deriva dallo stesso commit della versione cloud; non mantiene una variante funzionale dell’interfaccia.</td><td>La preparazione si arresta se la configurazione remota non è compatibile.</td></tr>
+                <tr><td>Identità Android</td><td>Application ID, nome visualizzato e callback nativo hanno il suffisso <code>.server</code>.</td><td>Consente coesistenza e sessioni indipendenti sullo stesso dispositivo.</td></tr>
+                <tr><td>Servizi</td><td>URL API, autenticazione e WebSocket puntano al server dedicato; nessun dato viene copiato dal cloud.</td><td>TLS valido, API raggiungibile e WebSocket operativo.</td></tr>
+                <tr><td>Autenticazione</td><td>L’interfaccia offre Google, Apple ed email come nella versione cloud.</td><td>I tre metodi e la registrazione devono essere realmente attivi sul server prima della build.</td></tr>
+                <tr><td>Chiavi</td><td>L’APK contiene soltanto la chiave client pubblicabile necessaria all’accesso.</td><td>Chiavi amministrative e credenziali OAuth restano nel runtime privato.</td></tr>
+                <tr><td>Aggiornamenti</td><td>La stessa versione dell’app viene riconfezionata con gli endpoint dedicati.</td><td>Ogni APK deve essere firmato e verificato separatamente.</td></tr>
+              </tbody>
+            </table>
+            <div class="callout warning"><b>Stato dell’ambiente Server</b><p>API e canale realtime dell’ambiente dedicato risultano raggiungibili. La rigenerazione dell’APK resta bloccata finché l’autenticazione remota non espone Google, Apple, email e registrazione con la stessa parità funzionale del cloud. L’APK server beta 8 già installato resta una build di collaudo e non certifica ancora tale parità.</p></div>
             <div class="deployment-list">
               <div><b>Landing e dossier</b><span>GitHub Pages, accesso pubblico</span></div>
               <div><b>Applicazione Android</b><span>APK 0.4.2-beta.8 scaricabile manualmente; non ancora negli store</span></div>
               <div><b>Codice applicativo</b><span>Repository di sviluppo separato dalla pagina pubblica</span></div>
-              <div><b>Database e account</b><span>Supabase Cloud con PostgreSQL, Auth e Storage</span></div>
-              <div><b>Server di gioco realtime</b><span>Server realtime pubblico; prosegue il collaudo delle sessioni con più utenti</span></div>
+              <div><b>Cloud: database e account</b><span>Supabase Cloud con PostgreSQL, Auth e Storage</span></div>
+              <div><b>Cloud: gioco realtime</b><span>Servizio pubblico dedicato; prosegue il collaudo delle sessioni con più utenti</span></div>
+              <div><b>Server: servizi dedicati</b><span>API HTTPS e gioco WSS separati; dati e sessioni non comunicano con l’ambiente cloud</span></div>
               <div><b>Webapp completa</b><span>Disponibile dal browser tramite la landing page, aggiornata insieme all’APK Android</span></div>
             </div>
             <div class="callout"><b>Aggiornamento del 9 settembre 2026</b><p>Web App e APK includono il profilo riordinato, gli inviti amici tramite link, i nuovi flussi per tavoli, tornei e sfide, il PAR come pagina e il replay sempre rigiocabile. <a href="novita.html">Leggi le novità e le verifiche effettuate.</a></p></div>
@@ -283,7 +317,7 @@
             <div class="roadmap">
               <article class="done"><span>01</span><div><b>Fondazione di gioco</b><p>Motore, tavolo, licita, gioco, punteggio e robot deterministico.</p></div><em>Realizzata</em></article>
               <article class="done"><span>02</span><div><b>Identità e sistema sociale</b><p>Account, profili separati, amici, blocchi, convenzioni e carte di coppia.</p></div><em>Realizzata nel prodotto</em></article>
-              <article class="partial"><span>03</span><div><b>Multiplayer persistente</b><p>Server autorevole e ripristino implementati; distribuzione e collaudo reale da completare.</p></div><em>In completamento</em></article>
+              <article class="partial"><span>03</span><div><b>Multiplayer persistente</b><p>Server autorevole, distribuzione pubblica e ripristino implementati; collaudo reale prolungato da completare.</p></div><em>In collaudo</em></article>
               <article class="done"><span>04</span><div><b>Storico e asincrono</b><p>Replay verificabile, sfide, gruppi, daylong e classifiche.</p></div><em>Nucleo realizzato</em></article>
               <article class="partial"><span>05</span><div><b>Tornei realtime</b><p>Schema, motori e prima UI presenti; operatività multi-tavolo end-to-end ancora aperta.</p></div><em>In sviluppo</em></article>
               <article><span>06</span><div><b>Circoli e direttori</b><p>Attività ordinaria, ruoli, calendario, comunicazioni, correzioni ed esportazioni.</p></div><em>Pianificata</em></article>
@@ -329,9 +363,9 @@
             </ul>
             <p class="doc-note">Questo dossier ha finalità descrittiva e di tracciamento del prodotto. Per un deposito formale, una registrazione o una valutazione legale devono essere conservati separatamente gli artefatti richiesti, le versioni del codice e le evidenze di data e titolarità secondo la procedura applicabile.</p>
             <div class="revision-box">
-              <div><span>Edizione</span><b>1.0</b></div>
-              <div><span>Data</span><b>23 agosto 2026</b></div>
-              <div><span>Oggetto</span><b>Prima descrizione organica pubblica della soluzione</b></div>
+              <div><span>Edizione</span><b>1.2</b></div>
+              <div><span>Data</span><b>9 settembre 2026</b></div>
+              <div><span>Oggetto</span><b>Aggiunte distribuzioni Cloud e Server, guida d’uso e stato beta 8</b></div>
             </div>
           </section>
         </article>
@@ -340,8 +374,9 @@
       <section class="docs-closing section-shell" data-reveal>
         <p class="section-kicker">GrandBridge</p>
         <h2>Una visione unica,<br />un sistema verificabile.</h2>
-        <p>Per una panoramica sintetica, per provare l’APK o per seguire l’evoluzione pubblica del progetto, torna alla pagina principale.</p>
+        <p>Per imparare a usare l’app apri la guida pratica; per provare l’APK o seguire l’evoluzione pubblica torna alla pagina principale.</p>
         <div>
+          <a class="secondary-button" href="guida.html">Guida all’utilizzo</a>
           <a class="primary-button" href="index.html">Torna alla landing <span>→</span></a>
           <button class="secondary-button" type="button" data-print>Stampa o salva in PDF</button>
         </div>
@@ -350,7 +385,7 @@
 
     <footer>
       <a class="brand" href="index.html"><span class="brand-mark">G</span><span>GrandBridge</span></a>
-      <p>Documento di prodotto e architettura · edizione 1.0</p>
+      <p>Documento di prodotto e architettura · edizione 1.2</p>
       <span>© <span id="year"></span> GrandBridge</span>
     </footer>
     <script src="script.js"></script>
