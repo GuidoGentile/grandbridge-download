@@ -26,10 +26,11 @@ L’APK 0.4.2-beta.8 è una build firmata per il collaudo e richiede l’autoriz
 
 Profilo e amici semplificati; tavoli e tornei online più immediati; PAR come pagina; replay rigiocabile da storico, allenamento e Campioni.
 
-- [Landing page](https://guidogentile.github.io/grandbridge-download/)
-- [Web App](https://guidogentile.github.io/grandbridge-download/app/)
-- [Novità](https://guidogentile.github.io/grandbridge-download/novita.html)
-- [Guida all’utilizzo](https://guidogentile.github.io/grandbridge-download/guida.html)
-- [Documentazione tecnica](https://guidogentile.github.io/grandbridge-download/documentazione.html)
+- [Landing page](https://grandbridge.app/)
+- [Web App](https://grandbridge.app/app/)
+- [Novità](https://grandbridge.app/novita.html)
+- [Guida all’utilizzo](https://grandbridge.app/guida.html)
+- [Documentazione tecnica](https://grandbridge.app/documentazione.html)
 - [APK 0.4.2-beta.8](https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.8/GrandBridge-0.4.2-beta.8.apk)
 - [Release](https://github.com/GuidoGentile/grandbridge-download/releases/tag/v0.4.2-beta.8)
+
