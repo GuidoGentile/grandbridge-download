@@ -43,8 +43,8 @@
           <p class="docs-lead">Descrizione organica dell’applicativo, del funzionamento, dei ruoli, dell’architettura tecnica e del percorso di evoluzione. Il documento descrive la soluzione in sviluppo, non soltanto l’APK pubblico.</p>
         </div>
         <dl class="document-meta" aria-label="Informazioni sul documento">
-          <div><dt>Edizione</dt><dd>1.2</dd></div>
-          <div><dt>Data di riferimento</dt><dd>9 settembre 2026</dd></div>
+          <div><dt>Edizione</dt><dd>1.3</dd></div>
+          <div><dt>Data di riferimento</dt><dd>11 settembre 2026</dd></div>
           <div><dt>Prodotto pubblico</dt><dd>GrandBridge 0.4.2-beta.8</dd></div>
           <div><dt>Stato</dt><dd>Prototipo in sviluppo attivo</dd></div>
           <div><dt>Destinatari</dt><dd>Utenti, partner, operatori, valutatori e terze parti</dd></div>
@@ -204,23 +204,24 @@
           <section id="architettura" class="doc-section" data-reveal>
             <p class="doc-number">06</p>
             <p class="section-kicker">Architettura applicativa</p>
-            <h2>Un monolite modulare con responsabilità nette.</h2>
-            <p>L’architettura attuale evita microservizi prematuri. La soluzione è suddivisa in componenti indipendenti sul piano logico e testabili separatamente.</p>
-            <div class="architecture-flow" role="img" aria-label="L'app React comunica con il server autorevole e con Supabase; il server persiste su Supabase Postgres">
-              <div class="arch-node client"><small>Esperienza</small><b>React + TypeScript</b><span>Web · Android/iOS tramite Capacitor</span></div>
-              <div class="arch-arrow"><span>comandi</span>→</div>
-              <div class="arch-node server"><small>Autorità di gioco</small><b>Server Node + WebSocket</b><span>Turni · legalità · viste private · timer</span></div>
-              <div class="arch-arrow"><span>eventi</span>→</div>
-              <div class="arch-node data"><small>Servizi persistenti</small><b>Supabase + Postgres</b><span>Auth · dati · Storage · RLS</span></div>
+            <h2>Tre livelli indipendenti, con continuità locale.</h2>
+            <p>La webapp viene distribuita come applicazione statica su grandbridge.app. Supabase gestisce identità e dati persistenti; un server separato governa soltanto il gioco competitivo in tempo reale. Questa separazione permette di continuare a usare Robot, Didattica, Allenamento e Replay locali quando il server di gioco non è disponibile.</p>
+            <div class="architecture-flow" role="img" aria-label="La webapp React contiene le funzioni locali e comunica separatamente con Supabase e con il server autorevole delle partite online">
+              <div class="arch-node client"><small>Webapp e mobile</small><b>React + TypeScript</b><span>Interfaccia · regole · Robot · Didattica · Replay · cache offline</span></div>
+              <div class="arch-arrow"><span>identità e dati</span>→</div>
+              <div class="arch-node data"><small>Servizi cloud</small><b>Supabase + Postgres</b><span>Google · Apple · email · profili · storico · Storage · RLS</span></div>
+              <div class="arch-arrow"><span>partite online</span>→</div>
+              <div class="arch-node server"><small>Autorità realtime</small><b>Server Node + WebSocket</b><span>Turni · legalità · viste private · timer · riconnessione</span></div>
             </div>
             <div class="component-grid">
-              <article><h3>App React</h3><p>Tavolo, bidding box, profilo, lobby e aree operative per ruolo. Conserva localmente soltanto preferenze di interfaccia e sessione.</p></article>
+              <article><h3>Webapp React</h3><p>Tavolo, bidding box, Robot e aree operative. Un service worker conserva la build, il modello locale e i componenti DDS dopo il primo caricamento completo.</p></article>
               <article><h3>Motore TypeScript</h3><p>Legalità, transizioni, prese, punteggio, robot, proiezioni private ed eventi deterministici, indipendenti da React e dal database.</p></article>
               <article><h3>Server autorevole</h3><p>Verifica identità, assegna posti, ordina i comandi, gestisce riconnessione e timer, produce viste personalizzate e persiste gli eventi confermati.</p></article>
               <article><h3>Supabase Auth</h3><p>Gestisce account e sessioni con accesso Google, Apple o email. Le build distribuite rifiutano utenti anonimi.</p></article>
               <article><h3>Postgres</h3><p>Conserva profili, relazioni, convenzioni, sessioni, board, eventi, sfide, tornei, risultati, ruoli e audit con modelli relazionali.</p></article>
-              <article><h3>Storage</h3><p>Conserva asset utente come gli avatar in spazi privati, accessibili tramite regole specifiche e collegamenti temporanei.</p></article>
+              <article><h3>Continuità locale</h3><p>Preferenze, Allenamento e copie dei replay vengono aperti dal dispositivo. Le funzioni cloud si riattivano e sincronizzano quando torna la connessione.</p></article>
             </div>
+            <div class="callout"><b>Quando un servizio si ferma</b><p>Un guasto al server realtime disabilita Tavoli, Tornei e Sfide online, senza bloccare il resto dell’app. Se manca Supabase, un account già verificato può riaprire le funzioni locali sullo stesso dispositivo; accesso iniziale e dati sociali richiedono invece la rete.</p></div>
             <h3>Scelte intenzionalmente escluse nella fase attuale</h3>
             <ul>
               <li>microservizi indipendenti senza un reale bisogno di scala o isolamento;</li>
@@ -363,9 +364,9 @@
             </ul>
             <p class="doc-note">Questo dossier ha finalità descrittiva e di tracciamento del prodotto. Per un deposito formale, una registrazione o una valutazione legale devono essere conservati separatamente gli artefatti richiesti, le versioni del codice e le evidenze di data e titolarità secondo la procedura applicabile.</p>
             <div class="revision-box">
-              <div><span>Edizione</span><b>1.2</b></div>
-              <div><span>Data</span><b>9 settembre 2026</b></div>
-              <div><span>Oggetto</span><b>Aggiunte distribuzioni Cloud e Server, guida d’uso e stato beta 8</b></div>
+              <div><span>Edizione</span><b>1.3</b></div>
+              <div><span>Data</span><b>11 settembre 2026</b></div>
+              <div><span>Oggetto</span><b>Continuità offline e separazione fra webapp, servizi cloud e server realtime</b></div>
             </div>
           </section>
         </article>
@@ -385,7 +386,7 @@
 
     <footer>
       <a class="brand" href="index.html"><span class="brand-mark">G</span><span>GrandBridge</span></a>
-      <p>Documento di prodotto e architettura · edizione 1.2</p>
+      <p>Documento di prodotto e architettura · edizione 1.3</p>
       <span>© <span id="year"></span> GrandBridge</span>
     </footer>
     <script src="script.js"></script>

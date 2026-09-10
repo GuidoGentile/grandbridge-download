@@ -11,7 +11,7 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 - app in sviluppo attivo con robot, account, multiplayer, sfide, tornei, circoli, replay e strumenti di integrità;
 - guida video da 60 secondi disponibile online dalla landing e dalle Impostazioni dell’app, senza essere inclusa nell’APK;
 - guida completa all’utilizzo, con sommario e schermate dell’app;
-- dossier tecnico aggiornato con architettura e caratteristiche delle distribuzioni Cloud e Server;
+- dossier tecnico aggiornato con architettura della webapp, servizi Supabase, server realtime e continuità locale;
 - corso GrandBridge in 41 lezioni basato sulla guida didattica FIGB e integrato con il metodo WBF;
 - APK Android pubblico 0.4.2-beta.8 disponibile dalla release collegata alla landing page;
 - replay unificato per storico, allenamenti e partite dei campioni, con navigazione diretta fra board;
@@ -22,9 +22,9 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 
 L’APK 0.4.2-beta.8 è una build firmata per il collaudo e richiede l’autorizzazione all’installazione manuale sul dispositivo Android. Conserva l’identificativo com.grandbridge.app per aggiornare l’installazione precedente quando la firma coincide.
 
-## Aggiornamento del 9 settembre 2026
+## Aggiornamento dell’11 settembre 2026
 
-Profilo e amici semplificati; tavoli e tornei online più immediati; PAR come pagina; replay rigiocabile da storico, allenamento e Campioni.
+La webapp e l’APK mantengono disponibili Robot, Didattica, Allenamento e Replay già salvati durante un’interruzione dei servizi online. Tavoli, Tornei e Sfide si riattivano quando torna il server realtime; account, profilo e sincronizzazione dipendono da Supabase.
 
 - [Landing page](https://grandbridge.app/)
 - [Web App](https://grandbridge.app/app/)
