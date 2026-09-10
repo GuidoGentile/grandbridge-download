@@ -1,4 +1,4 @@
-const CACHE_NAME = "grandbridge-webapp-0.4.2-beta.8-v2";
+const CACHE_NAME = "grandbridge-webapp-0.4.2-beta.8-v3";
 const APP_ROOT = new URL("./", self.location.href).toString();
 const APP_INDEX = new URL("index.html", APP_ROOT).toString();
 
@@ -28,7 +28,7 @@ self.addEventListener("message", (event) => {
   const urls = [...new Set(event.data.urls.filter((url) => typeof url === "string" && cacheable(url)))];
   event.waitUntil(caches.open(CACHE_NAME).then(async (cache) => {
     await Promise.allSettled(urls.map(async (url) => {
-      const response = await fetch(url, { credentials: "same-origin" });
+      const response = await fetch(url, { credentials: "same-origin", cache: "reload" });
       if (response.ok) await cache.put(url, response);
     }));
   }));
@@ -38,13 +38,13 @@ self.addEventListener("fetch", (event) => {
   const request = event.request;
   if (request.method !== "GET" || !cacheable(request.url)) return;
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).then(async (response) => {
+    event.respondWith(fetch(request, { cache: "no-cache" }).then(async (response) => {
       if (response.ok) await (await caches.open(CACHE_NAME)).put(APP_INDEX, response.clone());
       return response;
     }).catch(async () => (await caches.match(APP_INDEX)) ?? Response.error()));
     return;
   }
-  event.respondWith(caches.match(request).then((cached) => cached ?? fetch(request).then(async (response) => {
+  event.respondWith(caches.match(request).then((cached) => cached ?? fetch(request, { cache: "reload" }).then(async (response) => {
     if (response.ok) await (await caches.open(CACHE_NAME)).put(request, response.clone());
     return response;
   })));
