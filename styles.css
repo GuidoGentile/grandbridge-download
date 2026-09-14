@@ -92,8 +92,8 @@ h1 em,h2 em { color: var(--gold); font-style: normal; }
 .experience-grid b { color: var(--gold); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; }
 .experience-grid h3 { margin: 42px 0 20px; }
 .video-guide .split { align-items: center; }
-.video-frame { padding: 9px; border: 1px solid rgba(216,182,107,.45); border-radius: 18px; background: #020806; box-shadow: 0 30px 70px rgba(0,0,0,.38); }
-.video-frame video { width: 100%; display: block; aspect-ratio: 16/9; border-radius: 11px; background: #000; }
+.video-frame { width: min(100%,430px); justify-self: center; padding: 9px; border: 1px solid rgba(216,182,107,.45); border-radius: 18px; background: #020806; box-shadow: 0 30px 70px rgba(0,0,0,.38); }
+.video-frame video { width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; border-radius: 11px; background: #000; }
 
 .status-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); }
 .status-grid article { padding: 36px; }
@@ -106,7 +106,6 @@ h1 em,h2 em { color: var(--gold); font-style: normal; }
 .documentation-link { margin-top: 32px; padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 30px; border: 1px solid rgba(255,255,255,.1); border-radius: 14px; }
 .documentation-link strong { font: 500 25px var(--serif); }
 .documentation-link p { margin: 6px 0 0; color: var(--muted); font-size: 16px; }
-.documentation-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
 
 .liberty-signature { padding-block: 80px; background: var(--paper); }
 .liberty-signature .section-shell { display: grid; place-items: center; }
@@ -162,7 +161,6 @@ footer a { color: var(--muted); }
   .status-grid { grid-template-columns: 1fr; }
   .status-grid article + article { border-left: 0; border-top: 1px solid var(--line); }
   .documentation-link { align-items: stretch; flex-direction: column; }
-  .documentation-actions { justify-content: stretch; flex-direction: column; }
   .liberty-signature { padding-block: 48px; }
   footer { grid-template-columns: 1fr; text-align: center; }
   footer > span:last-child { justify-self: center; }
