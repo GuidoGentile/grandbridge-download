@@ -1,5 +1,6 @@
 {
   "version": "0.4.2-beta.8",
+  "webVersion": "0.4.2-beta.10",
   "versionCode": 127,
   "package": "com.grandbridge.app",
   "minimumAndroid": 7,
@@ -9,6 +10,9 @@
   "bytes": 132496175,
   "published": true,
   "publishedDate": "2026-09-09",
+  "webPublishedDate": "2026-09-14",
+  "iosVersion": "0.4.2",
+  "iosStatus": "testflight-preparation",
   "webApp": "https://grandbridge.app/app/",
   "notes": "https://grandbridge.app/novita.html"
 }
