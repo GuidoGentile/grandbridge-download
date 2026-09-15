@@ -27,7 +27,7 @@
 
   <h2 id="dati">2. Dati trattati e provenienza</h2>
   <ul>
-    <li><strong>Account:</strong> email, identificativo, informazioni di autenticazione e sessione. Nella prima beta pubblica l’accesso avviene tramite Google: riceviamo i dati autorizzati dal provider, come identificativo, email, nome e immagine, ma non la password Google. Supabase gestisce l’autenticazione e la sessione.</li>
+    <li><strong>Account:</strong> email, identificativo, informazioni di autenticazione e sessione. L’accesso può avvenire tramite Google, Apple o email secondo le opzioni disponibili: riceviamo i dati autorizzati dal provider, come identificativo, email, nome e immagine, ma non la password del provider. Il servizio GrandBridge gestisce la sessione sull’infrastruttura dedicata.</li>
     <li><strong>Profilo:</strong> nome visualizzato, foto facoltativa, codice amico, paese, lingue, anno di nascita, livello, preferenze e dati federali forniti o importati attraverso le funzioni richieste.</li>
     <li><strong>Gioco:</strong> partecipazioni, compagni e avversari, licite, carte, tempi e azioni di gioco, risultati, classifiche, replay, allenamenti, sfide e tornei.</li>
     <li><strong>Relazioni e comunicazioni:</strong> amicizie, inviti, circoli, messaggi, blocchi, segnalazioni, contestazioni e moderazione. Questi dati possono provenire anche da altri partecipanti.</li>
@@ -53,20 +53,19 @@
   <h2 id="destinatari">5. Destinatari e visibilità</h2>
   <p>Possono trattare dati le persone autorizzate all’amministrazione e all’assistenza e i fornitori tecnici, secondo le rispettive funzioni. Gli incarichi per attività svolte per conto del titolare devono essere disciplinati ai sensi dell’articolo 28 GDPR.</p>
   <ul>
-    <li><strong>Supabase Pte. Ltd.:</strong> autenticazione, database, archiviazione immagini e funzioni server.</li>
-    <li><strong>Railway Corporation:</strong> gioco online, comprese sfide asincrone, e relativi dati tecnici.</li>
-    <li><strong>GitHub:</strong> sito pubblico, download e segnalazioni pubbliche; può trattare dati tecnici di navigazione. Le segnalazioni pubblicate sono visibili ad altri.</li>
-    <li><strong>Google:</strong> autenticazione se scegli questo accesso; il sito principale carica inoltre caratteri da Google Fonts. Le pagine Privacy, Supporto ed Elimina account usano caratteri del dispositivo.</li>
+    <li><strong>OVHcloud:</strong> hosting della landing page e della Web App statica; può trattare i dati tecnici necessari a consegnare le pagine e proteggere il servizio.</li>
+    <li><strong>GitHub:</strong> repository, download delle versioni Android e segnalazioni pubbliche; può trattare i dati tecnici relativi a tali accessi. Le segnalazioni pubblicate sono visibili ad altri.</li>
+    <li><strong>Google e Apple:</strong> autenticazione quando scegli uno di questi accessi. Il sito principale carica inoltre caratteri da Google Fonts; le pagine Privacy, Supporto ed Elimina account usano caratteri del dispositivo.</li>
     <li><strong>FIGB e fonti federali:</strong> consultazioni e autenticazione richieste dalle funzionalità federali.</li>
     <li><strong>Altri utenti, organizzatori, direttori e moderatori:</strong> dati di profilo, partite, comunicazioni e competizioni secondo visibilità e ruoli. Classifiche e profili pubblici sono consultabili dal pubblico previsto dalla funzione.</li>
     <li><strong>Autorità e consulenti:</strong> nei casi necessari per obblighi applicabili o tutela di diritti.</li>
   </ul>
-  <p>Nella prima beta non viene utilizzato un servizio dedicato per email automatiche: registrazione e accesso avvengono tramite Google, mentre assistenza e richieste privacy sono ricevute direttamente all’indirizzo indicato sopra. Google, FIGB e GitHub possono agire come titolari autonomi per le attività che determinano direttamente.</p>
+  <p>Account, database, archiviazione e gioco online della versione Server sono eseguiti sull’infrastruttura dedicata amministrata dal titolare. Assistenza e richieste privacy sono ricevute direttamente all’indirizzo indicato sopra. OVHcloud opera come fornitore di hosting; Google, Apple, FIGB e GitHub possono agire come titolari autonomi per le attività che determinano direttamente.</p>
 
   <h2 id="trasferimenti">6. Trasferimenti fuori dallo Spazio economico europeo</h2>
-  <p>Alla data della revisione, il progetto Supabase usa la regione <strong>eu-central-1 (Germania)</strong>. Il server Railway è nella regione <strong>sfo (Stati Uniti)</strong>: i dati necessari al gioco online sono quindi trattati anche fuori dal SEE. Anche assistenza e subfornitori possono comportare trasferimenti; la regione del database non esaurisce il trattamento.</p>
-  <p>Il <a href="https://supabase.com/legal/customer-resources/data-processing-addendum">Data Processing Addendum di Supabase</a> integra le condizioni del servizio e include le clausole contrattuali standard europee. Il <a href="https://railway.com/legal/dpa">Data Processing Addendum di Railway</a> prevede le clausole contrattuali standard europee e misure supplementari; il titolare ne completa l’esecuzione prima di aprire al pubblico le funzioni di gioco online che usano Railway.</p>
-  <p>Per ridurre i trasferimenti, il database principale resta in Germania e sul server Railway transitano soltanto i dati necessari alla sessione online e alla sua continuità. Il titolare riesamina fornitori, subfornitori, paesi coinvolti e misure applicabili quando cambia il servizio. Puoi chiedere al contatto privacy informazioni sulle garanzie e una copia delle parti pertinenti, oscurando soltanto le informazioni riservate non necessarie.</p>
+  <p>Landing page e Web App statica sono ospitate su OVHcloud; account, database e gioco online della versione Server restano sull’infrastruttura dedicata amministrata dal titolare. La collocazione contrattuale dei servizi OVHcloud viene verificata rispetto all’offerta attivata.</p>
+  <p>Google, Apple e GitHub possono trattare dati anche fuori dallo Spazio economico europeo secondo le rispettive condizioni e garanzie applicabili. Il loro utilizzo dipende dall’azione scelta: accesso con il provider, download o apertura di una segnalazione pubblica.</p>
+  <p>Il titolare riesamina fornitori, subfornitori, paesi coinvolti e misure applicabili quando cambia il servizio. Puoi chiedere al contatto privacy informazioni sulle garanzie e una copia delle parti pertinenti, oscurando soltanto le informazioni riservate non necessarie.</p>
 
   <h2 id="conservazione">7. Conservazione breve e cancellazione</h2>
   <p><strong>Conserviamo uno storico limitato al tempo necessario per giocare e usare le funzioni richieste.</strong> La beta offre uno storico recente e non un servizio di archiviazione permanente. I termini indicati sono limiti ordinari massimi, non durate minime garantite; puoi chiedere prima la cancellazione nei casi previsti dalla legge.</p>
@@ -106,7 +105,7 @@
   <h2 id="sicurezza">12. Sicurezza e aggiornamenti</h2>
   <p>La protezione dei dati richiede misure tecniche e organizzative adeguate al rischio e gestione delle violazioni. Lo stato di beta non esclude tali obblighi. Questa informativa non comporta rinunce ai diritti previsti dalla legge.</p>
   <p>Il testo verrà aggiornato quando cambiano i trattamenti. Prima di usare i dati per nuove finalità verranno fornite le informazioni necessarie e, se richiesto, raccolto un consenso distinto. La data in alto identifica la revisione.</p>
-  <p>Riferimenti: <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679">Regolamento (UE) 2016/679</a>, <a href="https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/8981258">indicazioni del Garante</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">informativa GitHub</a> e <a href="https://policies.google.com/privacy?hl=it">informativa Google</a>.</p>
+  <p>Riferimenti: <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679">Regolamento (UE) 2016/679</a>, <a href="https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/8981258">indicazioni del Garante</a>, <a href="https://www.ovhcloud.com/it/personal-data-protection/">protezione dei dati OVHcloud</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">informativa GitHub</a>, <a href="https://policies.google.com/privacy?hl=it">informativa Google</a> e <a href="https://www.apple.com/legal/privacy/it/">informativa Apple</a>.</p>
 </article></main>
 <footer><span>© 2026 GrandBridge</span><a href="index.html">Home</a><a href="terms.html">Condizioni d’uso</a><a href="support.html">Supporto</a><a href="#titolare">Contatti privacy</a></footer>
 </body>

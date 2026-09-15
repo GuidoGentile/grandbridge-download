@@ -1,15 +1,24 @@
 # GrandBridge — sito pubblico
 
-Questo repository ospita la pagina pubblica e i download di prova di GrandBridge.
+Questo repository conserva la sorgente pubblicabile della landing page, della Web App e dei download di prova di GrandBridge.
 
 GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il codice dell’applicazione e la relativa cronologia di sviluppo restano in un repository privato separato.
+
+## Architettura pubblica
+
+- `https://grandbridge.app/`: landing, guida, documentazione e Web App statica in `/app/`, destinate all’hosting OVHcloud;
+- `https://server.grandbridge.app/`: unico ingresso dell’ambiente Server per autenticazione, API, Storage, video e gioco realtime;
+- GitHub: sorgente versionata e download delle release Android; non è la destinazione definitiva di hosting del sito;
+- nessun indirizzo operativo precedente è supportato.
+
+Robot, Didattica, Allenamento e replay già disponibili restano locali al dispositivo; account, sincronizzazione, funzioni sociali e gioco online richiedono il server.
 
 ## Stato
 
 - landing page informativa a caratteri grandi, centrata sulle funzioni reali e sullo stato del prodotto;
 - web app accessibile direttamente dalla landing page in `/app/`;
 - app in sviluppo attivo con robot, account, multiplayer, sfide, tornei, circoli, replay e strumenti di integrità;
-- guida video da 60 secondi disponibile online dalla landing e dalle Impostazioni dell’app, senza essere inclusa nell’APK;
+- guida video da due minuti servita da `server.grandbridge.app`, senza essere inclusa nello spazio OVH né nell’APK;
 - guida completa all’utilizzo, con sommario e schermate dell’app;
 - dossier tecnico aggiornato con architettura della webapp, servizi Supabase, server realtime e continuità locale;
 - corso GrandBridge in 41 lezioni basato sulla guida didattica FIGB e integrato con il metodo WBF;
@@ -22,9 +31,9 @@ GrandBridge è un’applicazione sperimentale di bridge online mobile-first. Il 
 
 L’APK 0.4.2-beta.8 è una build firmata per il collaudo e richiede l’autorizzazione all’installazione manuale sul dispositivo Android. Conserva l’identificativo com.grandbridge.app per aggiornare l’installazione precedente quando la firma coincide.
 
-## Aggiornamento dell’11 settembre 2026
+## Aggiornamento del 15 settembre 2026
 
-La webapp e l’APK mantengono disponibili Robot, Didattica, Allenamento e Replay già salvati durante un’interruzione dei servizi online. Tavoli, Tornei e Sfide si riattivano quando torna il server realtime; account, profilo e sincronizzazione dipendono da Supabase.
+La Web App beta 10 viene ora preparata nella configurazione Server per OVHcloud. Il passaggio DNS viene eseguito soltanto dopo il collaudo HTTPS completo di `server.grandbridge.app`, così la pubblicazione corrente non viene interrotta durante la preparazione.
 
 - [Landing page](https://grandbridge.app/)
 - [Web App](https://grandbridge.app/app/)
