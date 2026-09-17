@@ -1,12 +1,12 @@
 {
-  "version": "0.4.2-beta.11-server",
-  "webVersion": "0.4.2-beta.11",
-  "versionCode": 130,
+  "version": "0.4.2-beta.12-server",
+  "webVersion": "0.4.2-beta.12",
+  "versionCode": 131,
   "package": "com.grandbridge.app.server",
   "minimumAndroid": 7,
-  "apk": "GrandBridge-0.4.2-beta.11-server.apk",
-  "downloadUrl": "https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.11-server/GrandBridge-0.4.2-beta.11-server.apk",
-  "sha256": "C910641555FA5EFD96E921F65340999BC94FF88863E1EB39AB5656B687CB8323",
+  "apk": "GrandBridge-0.4.2-beta.12-server.apk",
+  "downloadUrl": "https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.12-server/GrandBridge-0.4.2-beta.12-server.apk",
+  "sha256": "1E001A31DF0655735B90B640F1EC4EA048C64D74F73D10EBCE72D41F270C1965",
   "bytes": 124332995,
   "published": true,
   "publishedDate": "2026-09-17",
@@ -21,4 +21,3 @@
   "video": "https://server.grandbridge.app/video/grandbridge-guida-120s.mp4",
   "notes": "https://grandbridge.app/novita.html"
 }
-
