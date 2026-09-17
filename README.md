@@ -40,7 +40,7 @@ La Web App beta 12 viene preparata nella configurazione Server per GitHub Pages.
 - [Novità](https://grandbridge.app/novita.html)
 - [Guida all’utilizzo](https://grandbridge.app/guida.html)
 - [Documentazione tecnica](https://grandbridge.app/documentazione.html)
-- [APK 0.4.2-beta.12-server](https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.12-server/GrandBridge-0.4.2-beta.12-server.apk)
+- [APK 0.4.2-beta.12-server](https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.12-server/GrandBridge-server-0.4.2-beta.12.apk)
 - [Release](https://github.com/GuidoGentile/grandbridge-download/releases/tag/v0.4.2-beta.12-server)
 
 
