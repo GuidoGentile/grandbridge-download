@@ -1,4 +1,4 @@
-const CACHE_NAME = "grandbridge-webapp-0.4.2-beta.12-v1";
+const CACHE_NAME = "grandbridge-webapp-0.4.2-beta.13-v1";
 const APP_ROOT = new URL("./", self.location.href).toString();
 const APP_INDEX = new URL("index.html", APP_ROOT).toString();
 
