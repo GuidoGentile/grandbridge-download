@@ -8,7 +8,7 @@
   "downloadUrl": "https://github.com/GuidoGentile/grandbridge-download/releases/download/v0.4.2-beta.13-server/GrandBridge-server-0.4.2-beta.13.apk",
   "sha256": "e10d19c12460ae2680bc541def84f40df02041013c5e9c0a9039248e4b31f722",
   "bytes": 121655781,
-  "published": false,
+  "published": true,
   "publishedDate": "2026-09-18",
   "webPublishedDate": "2026-09-18",
   "iosVersion": "0.4.2",
