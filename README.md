@@ -33,7 +33,7 @@ L’APK 0.4.2-beta.13-server è una build firmata per il collaudo e richiede l�
 
 ## Aggiornamento del 18 settembre 2026
 
-La Web App beta 13 ripristina la ricerca per nickname e corregge i collegamenti di invito. Viene preparata nella configurazione Server per GitHub Pages. `server.grandbridge.app` resta l’ingresso dei servizi dinamici su PHD-SERVER; OVH resta responsabile della posta e dello spazio SFTP usato per i backup cifrati.
+La Web App beta 13 ripristina la ricerca per nickname, corregge i collegamenti di invito e mostra l’atout per primo durante il gioco. Viene preparata nella configurazione Server per GitHub Pages. `server.grandbridge.app` resta l’ingresso dei servizi dinamici su PHD-SERVER; OVH resta responsabile della posta e dello spazio SFTP usato per i backup cifrati.
 
 - [Landing page](https://grandbridge.app/)
 - [Web App](https://grandbridge.app/app/)
